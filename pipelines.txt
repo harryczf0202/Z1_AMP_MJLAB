@@ -1,0 +1,58 @@
+curated .npz motions
+        |
+        v
+scripts/prepare_motions.py
+validate / copy motions into repo
+        |
+        v
+assets/motions/z1/amp/
+active AMP motion library
+        |
+        v
+ampmotion_loader.py
+load fps, joint_pos, joint_vel,
+body_pos_w, body_quat_w,
+body_lin_vel_w, body_ang_vel_w
+        |
+        +-------------------------+
+        |                         |
+        v                         v
+reset_from_motion            AMP observations
+env starts from              body pose/ori/vel
+random motion frames         relative to anchor
+        |                         |
+        +------------+------------+
+                     |
+                     v
+amp_env_cfg.py + config/z1/env_cfgs.py
+build Z1 AMP environment
+- robot config
+- actions
+- commands
+- rewards
+- terminations
+- motion events
+                     |
+                     v
+rl_cfg.py
+define PPO + AMP training settings
+- actor/critic nets
+- AMP coeff
+- discriminator dims
+- motion path
+                     |
+                     v
+AMPOnPolicyRunner
+PPO learns task behavior
+AMP learns motion style prior
+                     |
+                     v
+checkpoint .pt
+trained Z1 walking policy
+                     |
+          +----------+----------+
+          |                     |
+          v                     v
+      play.py                eval.py
+  visualize policy      measure reward,
+  in simulation         fall rate, tracking

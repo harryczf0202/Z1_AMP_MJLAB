@@ -1,0 +1,4554 @@
+{
+  "source_dir": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full",
+  "curated_root": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated",
+  "trimmed_qpos_root": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos",
+  "active_amp_root": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp",
+  "phase1_amp_root": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\phase1",
+  "full_length_review_root": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel",
+  "compiler_xml": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\robots\\z1\\xmls\\z1.xml",
+  "output_fps": 50,
+  "force_promote_all_to_amp": true,
+  "active_clips": [
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject2_stand_to_walk_1332_1530_natural",
+      "source_file": "walk1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_transition",
+      "training_sets": [
+        "phase1",
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 1332,
+      "end_frame": 1530,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Stand-to-walk transition from walk1_subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject2_stand_to_walk_1332_1530_natural.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject2_stand_to_walk_1332_1530_natural_vel.npz",
+      "phase1_output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\phase1\\Walk\\walk1_subject2_stand_to_walk_1332_1530_natural_vel.npz",
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 199,
+      "num_output_frames": 330,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 330,
+        "left_stance_mean_slip": 0.15347766637139268,
+        "right_stance_mean_slip": 0.1302488572769105,
+        "left_stance_max_slip": 2.775587022757687,
+        "right_stance_max_slip": 2.28462623077144,
+        "left_stance_samples": 300,
+        "right_stance_samples": 292,
+        "max_mean_stance_slip": 0.15347766637139268,
+        "max_joint_delta": 0.34877950216189146,
+        "p99_joint_delta": 0.07377658776747019,
+        "p999_joint_delta": 0.24257148691413696,
+        "root_z_min": 0.6336797939935729,
+        "root_z_max": 0.6814377605891372,
+        "left_landing_count": 2,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.010175487692743904,
+        "landing_oscillation_max": 0.01175333601821471
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 330,
+          "left_stance_mean_slip": 0.14677634894274946,
+          "right_stance_mean_slip": 0.1225440783492361,
+          "left_stance_max_slip": 2.818632637087829,
+          "right_stance_max_slip": 2.2951281639785237,
+          "left_stance_samples": 299,
+          "right_stance_samples": 291,
+          "max_mean_stance_slip": 0.14677634894274946,
+          "max_joint_delta": 0.34877950216189146,
+          "p99_joint_delta": 0.0713944689835507,
+          "p999_joint_delta": 0.24257148691413696,
+          "root_z_min": 0.6336797939935729,
+          "root_z_max": 0.6814377605891372,
+          "left_landing_count": 2,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.014047361856367208,
+          "landing_oscillation_max": 0.024527249541899332
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                234,
+                304
+              ],
+              [
+                116,
+                273
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 330,
+              "left_stance_mean_slip": 0.15347766637139268,
+              "right_stance_mean_slip": 0.1302488572769105,
+              "left_stance_max_slip": 2.775587022757687,
+              "right_stance_max_slip": 2.28462623077144,
+              "left_stance_samples": 300,
+              "right_stance_samples": 292,
+              "max_mean_stance_slip": 0.15347766637139268,
+              "max_joint_delta": 0.34877950216189146,
+              "p99_joint_delta": 0.07377658776747019,
+              "p999_joint_delta": 0.24257148691413696,
+              "root_z_min": 0.6336797939935729,
+              "root_z_max": 0.6814377605891372,
+              "left_landing_count": 2,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.010175487692743904,
+              "landing_oscillation_max": 0.01175333601821471
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 330,
+          "left_stance_mean_slip": 0.15347766637139268,
+          "right_stance_mean_slip": 0.1302488572769105,
+          "left_stance_max_slip": 2.775587022757687,
+          "right_stance_max_slip": 2.28462623077144,
+          "left_stance_samples": 300,
+          "right_stance_samples": 292,
+          "max_mean_stance_slip": 0.15347766637139268,
+          "max_joint_delta": 0.34877950216189146,
+          "p99_joint_delta": 0.07377658776747019,
+          "p999_joint_delta": 0.24257148691413696,
+          "root_z_min": 0.6336797939935729,
+          "root_z_max": 0.6814377605891372,
+          "left_landing_count": 2,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.010175487692743904,
+          "landing_oscillation_max": 0.01175333601821471
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_transition",
+        "stance_slip_threshold": 0.35,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.1535 <= 0.3500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject2_straight_sidewalk_walk_right_4690_4765",
+      "source_file": "walk1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_lateral",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 4690,
+      "end_frame": 4765,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Rightward sidewalk segment from walk1_subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject2_straight_sidewalk_walk_right_4690_4765.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject2_straight_sidewalk_walk_right_4690_4765_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 76,
+      "num_output_frames": 125,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 125,
+        "left_stance_mean_slip": 0.5207716116337062,
+        "right_stance_mean_slip": 0.26377069155587596,
+        "left_stance_max_slip": 3.990866572453458,
+        "right_stance_max_slip": 3.1634039883039553,
+        "left_stance_samples": 90,
+        "right_stance_samples": 83,
+        "max_mean_stance_slip": 0.5207716116337062,
+        "max_joint_delta": 0.4194199250416018,
+        "p99_joint_delta": 0.12302763878075357,
+        "p999_joint_delta": 0.30937101262009953,
+        "root_z_min": 0.6076647464978744,
+        "root_z_max": 0.6665846977722742,
+        "left_landing_count": 2,
+        "right_landing_count": 3,
+        "landing_oscillation_p99": 0.11051922381564781,
+        "landing_oscillation_max": 0.274884726846229
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 125,
+          "left_stance_mean_slip": 0.5207716116337062,
+          "right_stance_mean_slip": 0.26377069155587596,
+          "left_stance_max_slip": 3.990866572453458,
+          "right_stance_max_slip": 3.1634039883039553,
+          "left_stance_samples": 90,
+          "right_stance_samples": 83,
+          "max_mean_stance_slip": 0.5207716116337062,
+          "max_joint_delta": 0.4194199250416018,
+          "p99_joint_delta": 0.12302763878075357,
+          "p999_joint_delta": 0.30937101262009953,
+          "root_z_min": 0.6076647464978744,
+          "root_z_max": 0.6665846977722742,
+          "left_landing_count": 2,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.11051922381564781,
+          "landing_oscillation_max": 0.274884726846229
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_lateral",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.5208 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject2_straight_backward_walk_normal_3265_3340",
+      "source_file": "walk1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_backward",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 3265,
+      "end_frame": 3340,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Backward walk segment from walk1_subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject2_straight_backward_walk_normal_3265_3340.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject2_straight_backward_walk_normal_3265_3340_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 76,
+      "num_output_frames": 125,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 125,
+        "left_stance_mean_slip": 0.7422683389177426,
+        "right_stance_mean_slip": 0.5687160034075379,
+        "left_stance_max_slip": 3.9569569824358615,
+        "right_stance_max_slip": 3.8347642196710954,
+        "left_stance_samples": 78,
+        "right_stance_samples": 93,
+        "max_mean_stance_slip": 0.7422683389177426,
+        "max_joint_delta": 0.17444877160598693,
+        "p99_joint_delta": 0.11722086130606497,
+        "p999_joint_delta": 0.16114583404452332,
+        "root_z_min": 0.6022106243442984,
+        "root_z_max": 0.6764248190849576,
+        "left_landing_count": 3,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.056629166358620926,
+        "landing_oscillation_max": 0.09710765077846006
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 125,
+          "left_stance_mean_slip": 0.7422683389177426,
+          "right_stance_mean_slip": 0.5687160034075379,
+          "left_stance_max_slip": 3.9569569824358615,
+          "right_stance_max_slip": 3.8347642196710954,
+          "left_stance_samples": 78,
+          "right_stance_samples": 93,
+          "max_mean_stance_slip": 0.7422683389177426,
+          "max_joint_delta": 0.17444877160598693,
+          "p99_joint_delta": 0.11722086130606497,
+          "p999_joint_delta": 0.16114583404452332,
+          "root_z_min": 0.6022106243442984,
+          "root_z_max": 0.6764248190849576,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.056629166358620926,
+          "landing_oscillation_max": 0.09710765077846006
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_backward",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.7423 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject2_straight_walk_fast_2940_3015",
+      "source_file": "walk1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_forward",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 2940,
+      "end_frame": 3015,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Fast straight walk loop from walk1_subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject2_straight_walk_fast_2940_3015.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject2_straight_walk_fast_2940_3015_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 76,
+      "num_output_frames": 125,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 125,
+        "left_stance_mean_slip": 0.6418352828722543,
+        "right_stance_mean_slip": 0.7929825442519699,
+        "left_stance_max_slip": 4.541718675658664,
+        "right_stance_max_slip": 4.2181741575813305,
+        "left_stance_samples": 95,
+        "right_stance_samples": 86,
+        "max_mean_stance_slip": 0.7929825442519699,
+        "max_joint_delta": 0.4427724414793067,
+        "p99_joint_delta": 0.16174198482487306,
+        "p999_joint_delta": 0.35928593957695926,
+        "root_z_min": 0.5987509253108562,
+        "root_z_max": 0.6828454378137815,
+        "left_landing_count": 2,
+        "right_landing_count": 3,
+        "landing_oscillation_p99": 0.015467935749782344,
+        "landing_oscillation_max": 0.022410052318271645
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 125,
+          "left_stance_mean_slip": 0.5988213014661147,
+          "right_stance_mean_slip": 0.7911104380961768,
+          "left_stance_max_slip": 4.594008232609419,
+          "right_stance_max_slip": 4.386201579663946,
+          "left_stance_samples": 94,
+          "right_stance_samples": 86,
+          "max_mean_stance_slip": 0.7911104380961768,
+          "max_joint_delta": 0.4427724414793067,
+          "p99_joint_delta": 0.16174198482487306,
+          "p999_joint_delta": 0.35928593957695926,
+          "root_z_min": 0.5987509253108562,
+          "root_z_max": 0.6828454378137815,
+          "left_landing_count": 2,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.030974850607512584,
+          "landing_oscillation_max": 0.0655052876534612
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                36,
+                85
+              ],
+              [
+                12,
+                62,
+                109
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 125,
+              "left_stance_mean_slip": 0.6418352828722543,
+              "right_stance_mean_slip": 0.7929825442519699,
+              "left_stance_max_slip": 4.541718675658664,
+              "right_stance_max_slip": 4.2181741575813305,
+              "left_stance_samples": 95,
+              "right_stance_samples": 86,
+              "max_mean_stance_slip": 0.7929825442519699,
+              "max_joint_delta": 0.4427724414793067,
+              "p99_joint_delta": 0.16174198482487306,
+              "p999_joint_delta": 0.35928593957695926,
+              "root_z_min": 0.5987509253108562,
+              "root_z_max": 0.6828454378137815,
+              "left_landing_count": 2,
+              "right_landing_count": 3,
+              "landing_oscillation_p99": 0.015467935749782344,
+              "landing_oscillation_max": 0.022410052318271645
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 125,
+          "left_stance_mean_slip": 0.6418352828722543,
+          "right_stance_mean_slip": 0.7929825442519699,
+          "left_stance_max_slip": 4.541718675658664,
+          "right_stance_max_slip": 4.2181741575813305,
+          "left_stance_samples": 95,
+          "right_stance_samples": 86,
+          "max_mean_stance_slip": 0.7929825442519699,
+          "max_joint_delta": 0.4427724414793067,
+          "p99_joint_delta": 0.16174198482487306,
+          "p999_joint_delta": 0.35928593957695926,
+          "root_z_min": 0.5987509253108562,
+          "root_z_max": 0.6828454378137815,
+          "left_landing_count": 2,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.015467935749782344,
+          "landing_oscillation_max": 0.022410052318271645
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_forward",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.7930 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk2_subject1_walk_normal_6540_6629",
+      "source_file": "walk2_subject1.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_forward",
+      "training_sets": [
+        "phase1",
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 6540,
+      "end_frame": 6629,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Normal-speed walk window from walk2_subject1.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk2_subject1.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk2_subject1_walk_normal_6540_6629.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk2_subject1_walk_normal_6540_6629_vel.npz",
+      "phase1_output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\phase1\\Walk\\walk2_subject1_walk_normal_6540_6629_vel.npz",
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7146,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.11562154583034112,
+        "right_stance_mean_slip": 0.13935902124661254,
+        "left_stance_max_slip": 2.046324561748194,
+        "right_stance_max_slip": 1.3834650917115594,
+        "left_stance_samples": 96,
+        "right_stance_samples": 86,
+        "max_mean_stance_slip": 0.13935902124661254,
+        "max_joint_delta": 0.41597993313309667,
+        "p99_joint_delta": 0.15474476056147426,
+        "p999_joint_delta": 0.3309564200627371,
+        "root_z_min": 0.6454979609175904,
+        "root_z_max": 0.7026111329400742,
+        "left_landing_count": 3,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.03337047732516357,
+        "landing_oscillation_max": 0.04480326321457273
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.1223212302711048,
+          "right_stance_mean_slip": 0.1254221493699352,
+          "left_stance_max_slip": 2.046324561748194,
+          "right_stance_max_slip": 1.3834650917115594,
+          "left_stance_samples": 97,
+          "right_stance_samples": 86,
+          "max_mean_stance_slip": 0.1254221493699352,
+          "max_joint_delta": 0.41597993313309667,
+          "p99_joint_delta": 0.15617144470791303,
+          "p999_joint_delta": 0.3309564200627371,
+          "root_z_min": 0.6454979609175904,
+          "root_z_max": 0.7026111329400742,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.0782731707037655,
+          "landing_oscillation_max": 0.12768261138216908
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                2,
+                64,
+                125
+              ],
+              [
+                34,
+                94
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 149,
+              "left_stance_mean_slip": 0.11562154583034112,
+              "right_stance_mean_slip": 0.13935902124661254,
+              "left_stance_max_slip": 2.046324561748194,
+              "right_stance_max_slip": 1.3834650917115594,
+              "left_stance_samples": 96,
+              "right_stance_samples": 86,
+              "max_mean_stance_slip": 0.13935902124661254,
+              "max_joint_delta": 0.41597993313309667,
+              "p99_joint_delta": 0.15474476056147426,
+              "p999_joint_delta": 0.3309564200627371,
+              "root_z_min": 0.6454979609175904,
+              "root_z_max": 0.7026111329400742,
+              "left_landing_count": 3,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.03337047732516357,
+              "landing_oscillation_max": 0.04480326321457273
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.11562154583034112,
+          "right_stance_mean_slip": 0.13935902124661254,
+          "left_stance_max_slip": 2.046324561748194,
+          "right_stance_max_slip": 1.3834650917115594,
+          "left_stance_samples": 96,
+          "right_stance_samples": 86,
+          "max_mean_stance_slip": 0.13935902124661254,
+          "max_joint_delta": 0.41597993313309667,
+          "p99_joint_delta": 0.15474476056147426,
+          "p999_joint_delta": 0.3309564200627371,
+          "root_z_min": 0.6454979609175904,
+          "root_z_max": 0.7026111329400742,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.03337047732516357,
+          "landing_oscillation_max": 0.04480326321457273
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_forward",
+        "stance_slip_threshold": 0.5,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.1394 <= 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk2_subject1_walk_transition_6690_6870",
+      "source_file": "walk2_subject1.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_transition",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 6690,
+      "end_frame": 6870,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Walk transition segment mined from walk2_subject1.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk2_subject1.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk2_subject1_walk_transition_6690_6870.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk2_subject1_walk_transition_6690_6870_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7146,
+      "num_clip_frames": 181,
+      "num_output_frames": 300,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 300,
+        "left_stance_mean_slip": 0.07337125670294224,
+        "right_stance_mean_slip": 0.09462396120841715,
+        "left_stance_max_slip": 1.164233202414718,
+        "right_stance_max_slip": 2.3832005779572736,
+        "left_stance_samples": 216,
+        "right_stance_samples": 215,
+        "max_mean_stance_slip": 0.09462396120841715,
+        "max_joint_delta": 0.593096873016989,
+        "p99_joint_delta": 0.12880330956643404,
+        "p999_joint_delta": 0.30335744097989154,
+        "root_z_min": 0.6280395848402076,
+        "root_z_max": 0.7074449854107298,
+        "left_landing_count": 4,
+        "right_landing_count": 4,
+        "landing_oscillation_p99": 0.04265415201414622,
+        "landing_oscillation_max": 0.08400277086209601
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 300,
+          "left_stance_mean_slip": 0.06790146515581907,
+          "right_stance_mean_slip": 0.08609906949715206,
+          "left_stance_max_slip": 1.164233202414718,
+          "right_stance_max_slip": 2.3832005779572736,
+          "left_stance_samples": 217,
+          "right_stance_samples": 215,
+          "max_mean_stance_slip": 0.08609906949715206,
+          "max_joint_delta": 0.593096873016989,
+          "p99_joint_delta": 0.1311421058723143,
+          "p999_joint_delta": 0.31737669671189384,
+          "root_z_min": 0.6280395848402076,
+          "root_z_max": 0.7074449854107298,
+          "left_landing_count": 4,
+          "right_landing_count": 4,
+          "landing_oscillation_p99": 0.09388246108415256,
+          "landing_oscillation_max": 0.22860179366104624
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                55,
+                174,
+                234,
+                290
+              ],
+              [
+                76,
+                144,
+                204,
+                261
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 300,
+              "left_stance_mean_slip": 0.07337125670294224,
+              "right_stance_mean_slip": 0.09462396120841715,
+              "left_stance_max_slip": 1.164233202414718,
+              "right_stance_max_slip": 2.3832005779572736,
+              "left_stance_samples": 216,
+              "right_stance_samples": 215,
+              "max_mean_stance_slip": 0.09462396120841715,
+              "max_joint_delta": 0.593096873016989,
+              "p99_joint_delta": 0.12880330956643404,
+              "p999_joint_delta": 0.30335744097989154,
+              "root_z_min": 0.6280395848402076,
+              "root_z_max": 0.7074449854107298,
+              "left_landing_count": 4,
+              "right_landing_count": 4,
+              "landing_oscillation_p99": 0.04265415201414622,
+              "landing_oscillation_max": 0.08400277086209601
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 300,
+          "left_stance_mean_slip": 0.07337125670294224,
+          "right_stance_mean_slip": 0.09462396120841715,
+          "left_stance_max_slip": 1.164233202414718,
+          "right_stance_max_slip": 2.3832005779572736,
+          "left_stance_samples": 216,
+          "right_stance_samples": 215,
+          "max_mean_stance_slip": 0.09462396120841715,
+          "max_joint_delta": 0.593096873016989,
+          "p99_joint_delta": 0.12880330956643404,
+          "p999_joint_delta": 0.30335744097989154,
+          "root_z_min": 0.6280395848402076,
+          "root_z_max": 0.7074449854107298,
+          "left_landing_count": 4,
+          "right_landing_count": 4,
+          "landing_oscillation_p99": 0.04265415201414622,
+          "landing_oscillation_max": 0.08400277086209601
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_transition",
+        "stance_slip_threshold": 0.35,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.0946 <= 0.3500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject5_walk_rightturn_510_599",
+      "source_file": "walk1_subject5.npz",
+      "clip_kind": "range",
+      "semantic_label": "turn_walk",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 510,
+      "end_frame": 599,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Right-turn walking segment from walk1_subject5 after left-arm repair.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject5.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject5_walk_rightturn_510_599.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject5_walk_rightturn_510_599_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "left_from_right_tempered",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.5762352660139317,
+        "right_stance_mean_slip": 0.3656963909138133,
+        "left_stance_max_slip": 3.3725439400246575,
+        "right_stance_max_slip": 3.276302733111465,
+        "left_stance_samples": 111,
+        "right_stance_samples": 107,
+        "max_mean_stance_slip": 0.5762352660139317,
+        "max_joint_delta": 0.40459188690256587,
+        "p99_joint_delta": 0.18086612649876926,
+        "p999_joint_delta": 0.3264614608101745,
+        "root_z_min": 0.6010955040090467,
+        "root_z_max": 0.6563183500011729,
+        "left_landing_count": 3,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.03181198305932088,
+        "landing_oscillation_max": 0.13266584574398932
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.5753975810620813,
+          "right_stance_mean_slip": 0.3628740563891664,
+          "left_stance_max_slip": 3.496920538010971,
+          "right_stance_max_slip": 3.3389952593434087,
+          "left_stance_samples": 111,
+          "right_stance_samples": 107,
+          "max_mean_stance_slip": 0.5753975810620813,
+          "max_joint_delta": 0.6085161615424786,
+          "p99_joint_delta": 0.17641594361331664,
+          "p999_joint_delta": 0.32919332556911685,
+          "root_z_min": 0.6010955040090467,
+          "root_z_max": 0.6563183500011729,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.0986602029596424,
+          "landing_oscillation_max": 0.37890850049487335
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                20,
+                77,
+                126
+              ],
+              [
+                51,
+                103
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 149,
+              "left_stance_mean_slip": 0.5762352660139317,
+              "right_stance_mean_slip": 0.3656963909138133,
+              "left_stance_max_slip": 3.3725439400246575,
+              "right_stance_max_slip": 3.276302733111465,
+              "left_stance_samples": 111,
+              "right_stance_samples": 107,
+              "max_mean_stance_slip": 0.5762352660139317,
+              "max_joint_delta": 0.40459188690256587,
+              "p99_joint_delta": 0.18086612649876926,
+              "p999_joint_delta": 0.3264614608101745,
+              "root_z_min": 0.6010955040090467,
+              "root_z_max": 0.6563183500011729,
+              "left_landing_count": 3,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.03181198305932088,
+              "landing_oscillation_max": 0.13266584574398932
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.5762352660139317,
+          "right_stance_mean_slip": 0.3656963909138133,
+          "left_stance_max_slip": 3.3725439400246575,
+          "right_stance_max_slip": 3.276302733111465,
+          "left_stance_samples": 111,
+          "right_stance_samples": 107,
+          "max_mean_stance_slip": 0.5762352660139317,
+          "max_joint_delta": 0.40459188690256587,
+          "p99_joint_delta": 0.18086612649876926,
+          "p999_joint_delta": 0.3264614608101745,
+          "root_z_min": 0.6010955040090467,
+          "root_z_max": 0.6563183500011729,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.03181198305932088,
+          "landing_oscillation_max": 0.13266584574398932
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "turn_walk",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.5762 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject5_walk_turnaround_thenwalk_5622_5711",
+      "source_file": "walk1_subject5.npz",
+      "clip_kind": "range",
+      "semantic_label": "turn_walk",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 5622,
+      "end_frame": 5711,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Turn-around then walk segment from walk1_subject5 after left-arm repair.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject5.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject5_walk_turnaround_thenwalk_5622_5711.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject5_walk_turnaround_thenwalk_5622_5711_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "left_from_right_tempered",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.5624159679786073,
+        "right_stance_mean_slip": 0.47849969714941415,
+        "left_stance_max_slip": 3.2351758411206926,
+        "right_stance_max_slip": 2.86756392291321,
+        "left_stance_samples": 110,
+        "right_stance_samples": 108,
+        "max_mean_stance_slip": 0.5624159679786073,
+        "max_joint_delta": 0.41073407406937856,
+        "p99_joint_delta": 0.17121356541584462,
+        "p999_joint_delta": 0.30291881359851086,
+        "root_z_min": 0.6023950227492766,
+        "root_z_max": 0.6529482598470281,
+        "left_landing_count": 3,
+        "right_landing_count": 3,
+        "landing_oscillation_p99": 0.015134681723571642,
+        "landing_oscillation_max": 0.02945730108899547
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.5640891400682186,
+          "right_stance_mean_slip": 0.45164212051963537,
+          "left_stance_max_slip": 3.4615788456521925,
+          "right_stance_max_slip": 2.8502944943620503,
+          "left_stance_samples": 110,
+          "right_stance_samples": 107,
+          "max_mean_stance_slip": 0.5640891400682186,
+          "max_joint_delta": 0.41073407406937856,
+          "p99_joint_delta": 0.17121356541584462,
+          "p999_joint_delta": 0.30291881359851086,
+          "root_z_min": 0.6023950227492766,
+          "root_z_max": 0.6529482598470281,
+          "left_landing_count": 3,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.02795543833429658,
+          "landing_oscillation_max": 0.06283088944415882
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                4,
+                50,
+                103
+              ],
+              [
+                25,
+                77,
+                131
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 149,
+              "left_stance_mean_slip": 0.5624159679786073,
+              "right_stance_mean_slip": 0.47849969714941415,
+              "left_stance_max_slip": 3.2351758411206926,
+              "right_stance_max_slip": 2.86756392291321,
+              "left_stance_samples": 110,
+              "right_stance_samples": 108,
+              "max_mean_stance_slip": 0.5624159679786073,
+              "max_joint_delta": 0.41073407406937856,
+              "p99_joint_delta": 0.17121356541584462,
+              "p999_joint_delta": 0.30291881359851086,
+              "root_z_min": 0.6023950227492766,
+              "root_z_max": 0.6529482598470281,
+              "left_landing_count": 3,
+              "right_landing_count": 3,
+              "landing_oscillation_p99": 0.015134681723571642,
+              "landing_oscillation_max": 0.02945730108899547
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.5624159679786073,
+          "right_stance_mean_slip": 0.47849969714941415,
+          "left_stance_max_slip": 3.2351758411206926,
+          "right_stance_max_slip": 2.86756392291321,
+          "left_stance_samples": 110,
+          "right_stance_samples": 108,
+          "max_mean_stance_slip": 0.5624159679786073,
+          "max_joint_delta": 0.41073407406937856,
+          "p99_joint_delta": 0.17121356541584462,
+          "p999_joint_delta": 0.30291881359851086,
+          "root_z_min": 0.6023950227492766,
+          "root_z_max": 0.6529482598470281,
+          "left_landing_count": 3,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.015134681723571642,
+          "landing_oscillation_max": 0.02945730108899547
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "turn_walk",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.5624 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject5_stand_turn_6341_6430",
+      "source_file": "walk1_subject5.npz",
+      "clip_kind": "range",
+      "semantic_label": "upright_turn",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 6341,
+      "end_frame": 6430,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Stand-in-place turning segment from walk1_subject5 after left-arm repair.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject5.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject5_stand_turn_6341_6430.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject5_stand_turn_6341_6430_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "left_from_right_tempered",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.2313311880100435,
+        "right_stance_mean_slip": 0.22204805776944336,
+        "left_stance_max_slip": 2.6734221731116192,
+        "right_stance_max_slip": 1.9399106543798845,
+        "left_stance_samples": 148,
+        "right_stance_samples": 123,
+        "max_mean_stance_slip": 0.2313311880100435,
+        "max_joint_delta": 0.527445650947544,
+        "p99_joint_delta": 0.10017161606438282,
+        "p999_joint_delta": 0.2518258446215833,
+        "root_z_min": 0.6382668271396257,
+        "root_z_max": 0.6708262094655116,
+        "left_landing_count": 0,
+        "right_landing_count": 3,
+        "landing_oscillation_p99": 0.01955516379867649,
+        "landing_oscillation_max": 0.033457904347043266
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.2313311880100435,
+          "right_stance_mean_slip": 0.22204805776944336,
+          "left_stance_max_slip": 2.6734221731116192,
+          "right_stance_max_slip": 1.9399106543798845,
+          "left_stance_samples": 148,
+          "right_stance_samples": 123,
+          "max_mean_stance_slip": 0.2313311880100435,
+          "max_joint_delta": 0.527445650947544,
+          "p99_joint_delta": 0.10017161606438282,
+          "p999_joint_delta": 0.2518258446215833,
+          "root_z_min": 0.6382668271396257,
+          "root_z_max": 0.6708262094655116,
+          "left_landing_count": 0,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.01955516379867649,
+          "landing_oscillation_max": 0.033457904347043266
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "upright_turn",
+        "stance_slip_threshold": 0.3,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.2313 <= 0.3000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "aiming1_subject1_relaxed_upright_1408_1497",
+      "source_file": "aiming1_subject1.npz",
+      "clip_kind": "range",
+      "semantic_label": "upright",
+      "training_sets": [
+        "phase1",
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 1408,
+      "end_frame": 1497,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Upright segment with both arms relaxed out of the aiming pose.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\aiming1_subject1.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\aiming1_subject1_relaxed_upright_1408_1497.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\aiming1_subject1_relaxed_upright_1408_1497_vel.npz",
+      "phase1_output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\phase1\\Walk\\aiming1_subject1_relaxed_upright_1408_1497_vel.npz",
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7184,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "relaxed_bilateral_idle",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.0031971411337496664,
+        "right_stance_mean_slip": 0.003757023455528684,
+        "left_stance_max_slip": 0.010610739984763706,
+        "right_stance_max_slip": 0.011303387152025375,
+        "left_stance_samples": 148,
+        "right_stance_samples": 148,
+        "max_mean_stance_slip": 0.003757023455528684,
+        "max_joint_delta": 0.007485273483564783,
+        "p99_joint_delta": 0.006170961225156542,
+        "p999_joint_delta": 0.00716656014985427,
+        "root_z_min": 0.6927743316415043,
+        "root_z_max": 0.6961756080711156,
+        "left_landing_count": 0,
+        "right_landing_count": 0,
+        "landing_oscillation_p99": 0.0,
+        "landing_oscillation_max": 0.0
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.0031971411337496664,
+          "right_stance_mean_slip": 0.003757023455528684,
+          "left_stance_max_slip": 0.010610739984763706,
+          "right_stance_max_slip": 0.011303387152025375,
+          "left_stance_samples": 148,
+          "right_stance_samples": 148,
+          "max_mean_stance_slip": 0.003757023455528684,
+          "max_joint_delta": 0.007485273483564783,
+          "p99_joint_delta": 0.006170961225156542,
+          "p999_joint_delta": 0.00716656014985427,
+          "root_z_min": 0.6927743316415043,
+          "root_z_max": 0.6961756080711156,
+          "left_landing_count": 0,
+          "right_landing_count": 0,
+          "landing_oscillation_p99": 0.0,
+          "landing_oscillation_max": 0.0
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "upright",
+        "stance_slip_threshold": 0.15,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.0038 <= 0.1500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "aiming1_subject4_walk_forward_90_179",
+      "source_file": "aiming1_subject4.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_forward",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 90,
+      "end_frame": 179,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Forward-moving upright segment from aiming1_subject4 with arms relaxed out of the locked aiming pose.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\aiming1_subject4.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\aiming1_subject4_walk_forward_90_179.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\aiming1_subject4_walk_forward_90_179_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7184,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "relaxed_bilateral_idle",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.4084853880547508,
+        "right_stance_mean_slip": 0.4836881641127356,
+        "left_stance_max_slip": 2.909637373217246,
+        "right_stance_max_slip": 3.154698284831393,
+        "left_stance_samples": 120,
+        "right_stance_samples": 112,
+        "max_mean_stance_slip": 0.4836881641127356,
+        "max_joint_delta": 0.38285977364915313,
+        "p99_joint_delta": 0.11442235152500144,
+        "p999_joint_delta": 0.2673329014040634,
+        "root_z_min": 0.6164577359963475,
+        "root_z_max": 0.6695309102151633,
+        "left_landing_count": 2,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.014631189299425222,
+        "landing_oscillation_max": 0.02165638620214272
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.4084853880547508,
+          "right_stance_mean_slip": 0.4836881641127356,
+          "left_stance_max_slip": 2.909637373217246,
+          "right_stance_max_slip": 3.154698284831393,
+          "left_stance_samples": 120,
+          "right_stance_samples": 112,
+          "max_mean_stance_slip": 0.4836881641127356,
+          "max_joint_delta": 0.38285977364915313,
+          "p99_joint_delta": 0.11442235152500144,
+          "p999_joint_delta": 0.2673329014040634,
+          "root_z_min": 0.6164577359963475,
+          "root_z_max": 0.6695309102151633,
+          "left_landing_count": 2,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.014631189299425222,
+          "landing_oscillation_max": 0.02165638620214272
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_forward",
+        "stance_slip_threshold": 0.5,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.4837 <= 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Recovery",
+      "output_name": "fallAndGetUp1_subject1",
+      "source_file": "fallAndGetUp1_subject1.npz",
+      "clip_kind": "range",
+      "semantic_label": "recovery",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 408,
+      "end_frame": 1953,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Recovery trim copied from the G1 reference motion.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\fallAndGetUp1_subject1.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Recovery\\fallAndGetUp1_subject1.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Recovery\\fallAndGetUp1_subject1_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 5047,
+      "num_clip_frames": 1546,
+      "num_output_frames": 2575,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.85,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          2030,
+          2032
+        ]
+      ],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 2575,
+        "left_stance_mean_slip": 0.19040540477493564,
+        "right_stance_mean_slip": 0.2037177429440068,
+        "left_stance_max_slip": 3.4912464153385274,
+        "right_stance_max_slip": 6.62156895440947,
+        "left_stance_samples": 1039,
+        "right_stance_samples": 1159,
+        "max_mean_stance_slip": 0.2037177429440068,
+        "max_joint_delta": 0.4926386769200346,
+        "p99_joint_delta": 0.13930752917576975,
+        "p999_joint_delta": 0.29608013041387693,
+        "root_z_min": 0.06677323260984336,
+        "root_z_max": 0.7042458711853179,
+        "left_landing_count": 29,
+        "right_landing_count": 26,
+        "landing_oscillation_p99": 0.03866896489785042,
+        "landing_oscillation_max": 0.14509085396778598
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 2575,
+          "left_stance_mean_slip": 0.1814008457179342,
+          "right_stance_mean_slip": 0.19223364846179045,
+          "left_stance_max_slip": 3.591817522827416,
+          "right_stance_max_slip": 3.450494798664172,
+          "left_stance_samples": 1034,
+          "right_stance_samples": 1158,
+          "max_mean_stance_slip": 0.19223364846179045,
+          "max_joint_delta": 0.7308170754439716,
+          "p99_joint_delta": 0.14103324009835455,
+          "p999_joint_delta": 0.2980445492152242,
+          "root_z_min": 0.06677323260984336,
+          "root_z_max": 0.7042458711853179,
+          "left_landing_count": 30,
+          "right_landing_count": 26,
+          "landing_oscillation_p99": 0.08173772971730134,
+          "landing_oscillation_max": 0.5700364347356299
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "jump",
+              "joint_mode": "all",
+              "alpha": 0.25,
+              "radius": 2,
+              "passes": 1,
+              "threshold": 0.5,
+              "pad": 1
+            },
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 2575,
+              "left_stance_mean_slip": 0.18364579687884044,
+              "right_stance_mean_slip": 0.19604965379837075,
+              "left_stance_max_slip": 3.591817522827416,
+              "right_stance_max_slip": 6.62156895440947,
+              "left_stance_samples": 1035,
+              "right_stance_samples": 1157,
+              "max_mean_stance_slip": 0.19604965379837075,
+              "max_joint_delta": 0.4926386769200346,
+              "p99_joint_delta": 0.14173193657311317,
+              "p999_joint_delta": 0.3045036267578541,
+              "root_z_min": 0.06677323260984336,
+              "root_z_max": 0.7042458711853179,
+              "left_landing_count": 30,
+              "right_landing_count": 26,
+              "landing_oscillation_p99": 0.08061588728888815,
+              "landing_oscillation_max": 0.5510852662011174
+            }
+          },
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.4,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                198,
+                260,
+                293,
+                349,
+                371,
+                571,
+                633,
+                705,
+                817,
+                882,
+                934,
+                1012,
+                1192,
+                1249,
+                1307,
+                1333,
+                1401,
+                1455,
+                1522,
+                1570,
+                1579,
+                1739,
+                1788,
+                1990,
+                2115,
+                2165,
+                2230,
+                2329,
+                2501,
+                2546
+              ],
+              [
+                29,
+                235,
+                279,
+                392,
+                610,
+                687,
+                855,
+                901,
+                909,
+                961,
+                1146,
+                1225,
+                1275,
+                1358,
+                1491,
+                1548,
+                1613,
+                1763,
+                1845,
+                1954,
+                2067,
+                2143,
+                2265,
+                2356,
+                2458,
+                2521
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 2575,
+              "left_stance_mean_slip": 0.19040540477493564,
+              "right_stance_mean_slip": 0.2037177429440068,
+              "left_stance_max_slip": 3.4912464153385274,
+              "right_stance_max_slip": 6.62156895440947,
+              "left_stance_samples": 1039,
+              "right_stance_samples": 1159,
+              "max_mean_stance_slip": 0.2037177429440068,
+              "max_joint_delta": 0.4926386769200346,
+              "p99_joint_delta": 0.13930752917576975,
+              "p999_joint_delta": 0.29608013041387693,
+              "root_z_min": 0.06677323260984336,
+              "root_z_max": 0.7042458711853179,
+              "left_landing_count": 29,
+              "right_landing_count": 26,
+              "landing_oscillation_p99": 0.03866896489785042,
+              "landing_oscillation_max": 0.14509085396778598
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 2575,
+          "left_stance_mean_slip": 0.19040540477493564,
+          "right_stance_mean_slip": 0.2037177429440068,
+          "left_stance_max_slip": 3.4912464153385274,
+          "right_stance_max_slip": 6.62156895440947,
+          "left_stance_samples": 1039,
+          "right_stance_samples": 1159,
+          "max_mean_stance_slip": 0.2037177429440068,
+          "max_joint_delta": 0.4926386769200346,
+          "p99_joint_delta": 0.13930752917576975,
+          "p999_joint_delta": 0.29608013041387693,
+          "root_z_min": 0.06677323260984336,
+          "root_z_max": 0.7042458711853179,
+          "left_landing_count": 29,
+          "right_landing_count": 26,
+          "landing_oscillation_p99": 0.03866896489785042,
+          "landing_oscillation_max": 0.14509085396778598
+        }
+      },
+      "recovery_entry_windows": [
+        [
+          482,
+          509
+        ],
+        [
+          736,
+          753
+        ],
+        [
+          437,
+          451
+        ],
+        [
+          1956,
+          1974
+        ]
+      ],
+      "recovery_stage0_entry_windows": [],
+      "recovery_stage1_entry_windows": [
+        [
+          482,
+          509
+        ],
+        [
+          736,
+          753
+        ]
+      ],
+      "recovery_stage2_entry_windows": [
+        [
+          437,
+          451
+        ],
+        [
+          1956,
+          1974
+        ]
+      ],
+      "quality_gate": {
+        "semantic_label": "recovery",
+        "stance_slip_threshold": 0.45,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.2037 <= 0.4500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Recovery",
+      "output_name": "fallAndGetUp1_subject4",
+      "source_file": "fallAndGetUp1_subject4.npz",
+      "clip_kind": "range",
+      "semantic_label": "recovery",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 40,
+      "end_frame": 520,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Early fall-and-recover cycle with the dead front T-pose frames removed.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\fallAndGetUp1_subject4.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Recovery\\fallAndGetUp1_subject4.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Recovery\\fallAndGetUp1_subject4_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 5047,
+      "num_clip_frames": 481,
+      "num_output_frames": 800,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.9,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          1948,
+          1950
+        ],
+        [
+          2928,
+          2932
+        ],
+        [
+          3578,
+          3580
+        ],
+        [
+          3683,
+          3686
+        ],
+        [
+          4061,
+          4064
+        ],
+        [
+          4069,
+          4076
+        ],
+        [
+          4132,
+          4135
+        ],
+        [
+          4148,
+          4150
+        ],
+        [
+          4565,
+          4567
+        ],
+        [
+          4581,
+          4583
+        ],
+        [
+          4584,
+          4587
+        ]
+      ],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 800,
+        "left_stance_mean_slip": 0.36780273669546365,
+        "right_stance_mean_slip": 0.33027471453023494,
+        "left_stance_max_slip": 8.964908121779969,
+        "right_stance_max_slip": 8.976308474615061,
+        "left_stance_samples": 366,
+        "right_stance_samples": 481,
+        "max_mean_stance_slip": 0.36780273669546365,
+        "max_joint_delta": 0.3531055323241093,
+        "p99_joint_delta": 0.1718610750517799,
+        "p999_joint_delta": 0.2705223955129757,
+        "root_z_min": 0.09380964651168529,
+        "root_z_max": 0.6942091248668539,
+        "left_landing_count": 9,
+        "right_landing_count": 10,
+        "landing_oscillation_p99": 0.06838011724291816,
+        "landing_oscillation_max": 0.24087829335392563
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 800,
+          "left_stance_mean_slip": 0.35985081466573376,
+          "right_stance_mean_slip": 0.3173954589597861,
+          "left_stance_max_slip": 9.009885418304938,
+          "right_stance_max_slip": 9.167376615796071,
+          "left_stance_samples": 372,
+          "right_stance_samples": 480,
+          "max_mean_stance_slip": 0.35985081466573376,
+          "max_joint_delta": 0.5765008025051649,
+          "p99_joint_delta": 0.18322436300432463,
+          "p999_joint_delta": 0.2969981599837648,
+          "root_z_min": 0.09380964651168529,
+          "root_z_max": 0.6942091248668539,
+          "left_landing_count": 10,
+          "right_landing_count": 11,
+          "landing_oscillation_p99": 0.14219253749775967,
+          "landing_oscillation_max": 0.4413521322072798
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "jump",
+              "joint_mode": "all",
+              "alpha": 0.25,
+              "radius": 2,
+              "passes": 1,
+              "threshold": 0.48,
+              "pad": 1
+            },
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 800,
+              "left_stance_mean_slip": 0.35985081466573376,
+              "right_stance_mean_slip": 0.31815084372474906,
+              "left_stance_max_slip": 9.009885418304938,
+              "right_stance_max_slip": 9.167376615796071,
+              "left_stance_samples": 372,
+              "right_stance_samples": 481,
+              "max_mean_stance_slip": 0.35985081466573376,
+              "max_joint_delta": 0.36845117195230265,
+              "p99_joint_delta": 0.1833477894076647,
+              "p999_joint_delta": 0.29732708198239605,
+              "root_z_min": 0.09380964651168529,
+              "root_z_max": 0.6942091248668539,
+              "left_landing_count": 10,
+              "right_landing_count": 11,
+              "landing_oscillation_p99": 0.1407330694577913,
+              "landing_oscillation_max": 0.3403406478010766
+            }
+          },
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.4,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                219,
+                430,
+                457,
+                483,
+                503,
+                523,
+                687,
+                729,
+                757,
+                787
+              ],
+              [
+                166,
+                448,
+                472,
+                493,
+                512,
+                532,
+                603,
+                637,
+                714,
+                776,
+                799
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 800,
+              "left_stance_mean_slip": 0.36780273669546365,
+              "right_stance_mean_slip": 0.33027471453023494,
+              "left_stance_max_slip": 8.964908121779969,
+              "right_stance_max_slip": 8.976308474615061,
+              "left_stance_samples": 366,
+              "right_stance_samples": 481,
+              "max_mean_stance_slip": 0.36780273669546365,
+              "max_joint_delta": 0.3531055323241093,
+              "p99_joint_delta": 0.1718610750517799,
+              "p999_joint_delta": 0.2705223955129757,
+              "root_z_min": 0.09380964651168529,
+              "root_z_max": 0.6942091248668539,
+              "left_landing_count": 9,
+              "right_landing_count": 10,
+              "landing_oscillation_p99": 0.06838011724291816,
+              "landing_oscillation_max": 0.24087829335392563
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 800,
+          "left_stance_mean_slip": 0.36780273669546365,
+          "right_stance_mean_slip": 0.33027471453023494,
+          "left_stance_max_slip": 8.964908121779969,
+          "right_stance_max_slip": 8.976308474615061,
+          "left_stance_samples": 366,
+          "right_stance_samples": 481,
+          "max_mean_stance_slip": 0.36780273669546365,
+          "max_joint_delta": 0.3531055323241093,
+          "p99_joint_delta": 0.1718610750517799,
+          "p999_joint_delta": 0.2705223955129757,
+          "root_z_min": 0.09380964651168529,
+          "root_z_max": 0.6942091248668539,
+          "left_landing_count": 9,
+          "right_landing_count": 10,
+          "landing_oscillation_p99": 0.06838011724291816,
+          "landing_oscillation_max": 0.24087829335392563
+        }
+      },
+      "recovery_entry_windows": [
+        [
+          612,
+          632
+        ],
+        [
+          718,
+          729
+        ]
+      ],
+      "recovery_stage0_entry_windows": [],
+      "recovery_stage1_entry_windows": [
+        [
+          612,
+          632
+        ]
+      ],
+      "recovery_stage2_entry_windows": [
+        [
+          718,
+          729
+        ]
+      ],
+      "quality_gate": {
+        "semantic_label": "recovery",
+        "stance_slip_threshold": 0.45,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.3678 <= 0.4500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Recovery",
+      "output_name": "fallAndGetUp2_subject2",
+      "source_file": "fallAndGetUp2_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "recovery",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 530,
+      "end_frame": 1020,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Later fall-and-recover cycle from fallAndGetUp2_subject2 chosen to avoid the shaky early ground phase.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\fallAndGetUp2_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Recovery\\fallAndGetUp2_subject2.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Recovery\\fallAndGetUp2_subject2_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 4918,
+      "num_clip_frames": 491,
+      "num_output_frames": 817,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.85,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          275,
+          278
+        ],
+        [
+          1731,
+          1733
+        ],
+        [
+          1759,
+          1763
+        ],
+        [
+          1771,
+          1773
+        ],
+        [
+          1780,
+          1782
+        ],
+        [
+          1799,
+          1801
+        ],
+        [
+          1802,
+          1805
+        ],
+        [
+          1809,
+          1811
+        ],
+        [
+          2057,
+          2059
+        ],
+        [
+          2069,
+          2071
+        ],
+        [
+          2076,
+          2080
+        ],
+        [
+          2086,
+          2089
+        ],
+        [
+          2354,
+          2357
+        ],
+        [
+          2566,
+          2572
+        ],
+        [
+          2586,
+          2589
+        ],
+        [
+          2591,
+          2593
+        ],
+        [
+          2600,
+          2603
+        ],
+        [
+          2606,
+          2609
+        ],
+        [
+          2617,
+          2619
+        ],
+        [
+          3462,
+          3465
+        ],
+        [
+          4030,
+          4032
+        ]
+      ],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 817,
+        "left_stance_mean_slip": 0.0856599193363562,
+        "right_stance_mean_slip": 0.08895866103548411,
+        "left_stance_max_slip": 2.018286997220167,
+        "right_stance_max_slip": 1.2368187292841544,
+        "left_stance_samples": 313,
+        "right_stance_samples": 189,
+        "max_mean_stance_slip": 0.08895866103548411,
+        "max_joint_delta": 0.5311729088017805,
+        "p99_joint_delta": 0.0902026095498697,
+        "p999_joint_delta": 0.23880207535394393,
+        "root_z_min": 0.11062068971503367,
+        "root_z_max": 0.6815332463236174,
+        "left_landing_count": 2,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.0390486400413261,
+        "landing_oscillation_max": 0.08334731901833856
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 817,
+          "left_stance_mean_slip": 0.08531333467625919,
+          "right_stance_mean_slip": 0.08864818399646819,
+          "left_stance_max_slip": 2.0877910606049985,
+          "right_stance_max_slip": 1.316060661112866,
+          "left_stance_samples": 312,
+          "right_stance_samples": 189,
+          "max_mean_stance_slip": 0.08864818399646819,
+          "max_joint_delta": 0.9126555256176931,
+          "p99_joint_delta": 0.09055959550273449,
+          "p999_joint_delta": 0.24579135354090564,
+          "root_z_min": 0.11062068971503367,
+          "root_z_max": 0.6815332463236174,
+          "left_landing_count": 2,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.07996244988141725,
+          "landing_oscillation_max": 0.33555918677768476
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "jump",
+              "joint_mode": "all",
+              "alpha": 0.25,
+              "radius": 2,
+              "passes": 1,
+              "threshold": 0.48,
+              "pad": 1
+            },
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 817,
+              "left_stance_mean_slip": 0.08531333467625919,
+              "right_stance_mean_slip": 0.08864818399646819,
+              "left_stance_max_slip": 2.0877910606049985,
+              "right_stance_max_slip": 1.316060661112866,
+              "left_stance_samples": 312,
+              "right_stance_samples": 189,
+              "max_mean_stance_slip": 0.08864818399646819,
+              "max_joint_delta": 0.5311729088017805,
+              "p99_joint_delta": 0.0906295203995153,
+              "p999_joint_delta": 0.25150170592715854,
+              "root_z_min": 0.11062068971503367,
+              "root_z_max": 0.6815332463236174,
+              "left_landing_count": 2,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.07996244988141725,
+              "landing_oscillation_max": 0.33555918677768476
+            }
+          },
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.4,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                225,
+                727
+              ],
+              [
+                22,
+                811
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 817,
+              "left_stance_mean_slip": 0.0856599193363562,
+              "right_stance_mean_slip": 0.08895866103548411,
+              "left_stance_max_slip": 2.018286997220167,
+              "right_stance_max_slip": 1.2368187292841544,
+              "left_stance_samples": 313,
+              "right_stance_samples": 189,
+              "max_mean_stance_slip": 0.08895866103548411,
+              "max_joint_delta": 0.5311729088017805,
+              "p99_joint_delta": 0.0902026095498697,
+              "p999_joint_delta": 0.23880207535394393,
+              "root_z_min": 0.11062068971503367,
+              "root_z_max": 0.6815332463236174,
+              "left_landing_count": 2,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.0390486400413261,
+              "landing_oscillation_max": 0.08334731901833856
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 817,
+          "left_stance_mean_slip": 0.0856599193363562,
+          "right_stance_mean_slip": 0.08895866103548411,
+          "left_stance_max_slip": 2.018286997220167,
+          "right_stance_max_slip": 1.2368187292841544,
+          "left_stance_samples": 313,
+          "right_stance_samples": 189,
+          "max_mean_stance_slip": 0.08895866103548411,
+          "max_joint_delta": 0.5311729088017805,
+          "p99_joint_delta": 0.0902026095498697,
+          "p999_joint_delta": 0.23880207535394393,
+          "root_z_min": 0.11062068971503367,
+          "root_z_max": 0.6815332463236174,
+          "left_landing_count": 2,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.0390486400413261,
+          "landing_oscillation_max": 0.08334731901833856
+        }
+      },
+      "recovery_entry_windows": [
+        [
+          396,
+          578
+        ]
+      ],
+      "recovery_stage0_entry_windows": [
+        [
+          396,
+          578
+        ]
+      ],
+      "recovery_stage1_entry_windows": [],
+      "recovery_stage2_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "recovery",
+        "stance_slip_threshold": 0.45,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.0890 <= 0.4500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Recovery",
+      "output_name": "fallAndGetUp2_subject2_recover_990_1340",
+      "source_file": "fallAndGetUp2_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "recovery",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 990,
+      "end_frame": 1340,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Second recovery trim from fallAndGetUp2_subject2 that captures a separate clean get-up cycle.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\fallAndGetUp2_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Recovery\\fallAndGetUp2_subject2_recover_990_1340.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Recovery\\fallAndGetUp2_subject2_recover_990_1340_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 4918,
+      "num_clip_frames": 351,
+      "num_output_frames": 584,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.85,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          275,
+          278
+        ],
+        [
+          1731,
+          1733
+        ],
+        [
+          1759,
+          1763
+        ],
+        [
+          1771,
+          1773
+        ],
+        [
+          1780,
+          1782
+        ],
+        [
+          1799,
+          1801
+        ],
+        [
+          1802,
+          1805
+        ],
+        [
+          1809,
+          1811
+        ],
+        [
+          2057,
+          2059
+        ],
+        [
+          2069,
+          2071
+        ],
+        [
+          2076,
+          2080
+        ],
+        [
+          2086,
+          2089
+        ],
+        [
+          2354,
+          2357
+        ],
+        [
+          2566,
+          2572
+        ],
+        [
+          2586,
+          2589
+        ],
+        [
+          2591,
+          2593
+        ],
+        [
+          2600,
+          2603
+        ],
+        [
+          2606,
+          2609
+        ],
+        [
+          2617,
+          2619
+        ],
+        [
+          3462,
+          3465
+        ],
+        [
+          4030,
+          4032
+        ]
+      ],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 584,
+        "left_stance_mean_slip": 0.11984106223064052,
+        "right_stance_mean_slip": 0.11628428750724708,
+        "left_stance_max_slip": 1.1307578078700198,
+        "right_stance_max_slip": 1.377186205058062,
+        "left_stance_samples": 410,
+        "right_stance_samples": 384,
+        "max_mean_stance_slip": 0.11984106223064052,
+        "max_joint_delta": 0.4817824168487423,
+        "p99_joint_delta": 0.11334096076272386,
+        "p999_joint_delta": 0.2788373384247759,
+        "root_z_min": 0.06211946392785693,
+        "root_z_max": 0.6789396453496221,
+        "left_landing_count": 5,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.06478821233553828,
+        "landing_oscillation_max": 0.1353773040516691
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 584,
+          "left_stance_mean_slip": 0.12151199173150425,
+          "right_stance_mean_slip": 0.11455682309031001,
+          "left_stance_max_slip": 1.1307578078700198,
+          "right_stance_max_slip": 1.4218321869114412,
+          "left_stance_samples": 413,
+          "right_stance_samples": 384,
+          "max_mean_stance_slip": 0.12151199173150425,
+          "max_joint_delta": 0.8230931772218955,
+          "p99_joint_delta": 0.1205452181172345,
+          "p999_joint_delta": 0.26643704178152905,
+          "root_z_min": 0.06211946392785693,
+          "root_z_max": 0.6789396453496221,
+          "left_landing_count": 6,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.16777369517596438,
+          "landing_oscillation_max": 0.44429278808826334
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "jump",
+              "joint_mode": "all",
+              "alpha": 0.25,
+              "radius": 2,
+              "passes": 1,
+              "threshold": 0.48,
+              "pad": 1
+            },
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 584,
+              "left_stance_mean_slip": 0.12151199173150425,
+              "right_stance_mean_slip": 0.11455682309031001,
+              "left_stance_max_slip": 1.1307578078700198,
+              "right_stance_max_slip": 1.4218321869114412,
+              "left_stance_samples": 413,
+              "right_stance_samples": 384,
+              "max_mean_stance_slip": 0.12151199173150425,
+              "max_joint_delta": 0.4817824168487423,
+              "p99_joint_delta": 0.12083522146676486,
+              "p999_joint_delta": 0.2788373384247759,
+              "root_z_min": 0.06211946392785693,
+              "root_z_max": 0.6789396453496221,
+              "left_landing_count": 6,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.16777369517596438,
+              "landing_oscillation_max": 0.44429278808826334
+            }
+          },
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.4,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                206,
+                225,
+                268,
+                293,
+                395,
+                501
+              ],
+              [
+                44,
+                528
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 584,
+              "left_stance_mean_slip": 0.11984106223064052,
+              "right_stance_mean_slip": 0.11628428750724708,
+              "left_stance_max_slip": 1.1307578078700198,
+              "right_stance_max_slip": 1.377186205058062,
+              "left_stance_samples": 410,
+              "right_stance_samples": 384,
+              "max_mean_stance_slip": 0.11984106223064052,
+              "max_joint_delta": 0.4817824168487423,
+              "p99_joint_delta": 0.11334096076272386,
+              "p999_joint_delta": 0.2788373384247759,
+              "root_z_min": 0.06211946392785693,
+              "root_z_max": 0.6789396453496221,
+              "left_landing_count": 5,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.06478821233553828,
+              "landing_oscillation_max": 0.1353773040516691
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 584,
+          "left_stance_mean_slip": 0.11984106223064052,
+          "right_stance_mean_slip": 0.11628428750724708,
+          "left_stance_max_slip": 1.1307578078700198,
+          "right_stance_max_slip": 1.377186205058062,
+          "left_stance_samples": 410,
+          "right_stance_samples": 384,
+          "max_mean_stance_slip": 0.11984106223064052,
+          "max_joint_delta": 0.4817824168487423,
+          "p99_joint_delta": 0.11334096076272386,
+          "p999_joint_delta": 0.2788373384247759,
+          "root_z_min": 0.06211946392785693,
+          "root_z_max": 0.6789396453496221,
+          "left_landing_count": 5,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.06478821233553828,
+          "landing_oscillation_max": 0.1353773040516691
+        }
+      },
+      "recovery_entry_windows": [
+        [
+          284,
+          352
+        ]
+      ],
+      "recovery_stage0_entry_windows": [
+        [
+          284,
+          352
+        ]
+      ],
+      "recovery_stage1_entry_windows": [],
+      "recovery_stage2_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "recovery",
+        "stance_slip_threshold": 0.45,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.1198 <= 0.4500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Recovery",
+      "output_name": "pushAndStumble1_subject2_recover_520_1180",
+      "source_file": "pushAndStumble1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "disturbance_recovery",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 520,
+      "end_frame": 1180,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Push-and-stumble recovery segment trimmed from the clean early phase of subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\pushAndStumble1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Recovery\\pushAndStumble1_subject2_recover_520_1180.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Recovery\\pushAndStumble1_subject2_recover_520_1180_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 6801,
+      "num_clip_frames": 661,
+      "num_output_frames": 1100,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.55,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          743,
+          745
+        ],
+        [
+          1600,
+          1602
+        ],
+        [
+          2793,
+          2795
+        ],
+        [
+          5176,
+          5178
+        ],
+        [
+          5476,
+          5478
+        ],
+        [
+          5499,
+          5506
+        ],
+        [
+          5517,
+          5522
+        ],
+        [
+          5539,
+          5542
+        ],
+        [
+          5568,
+          5570
+        ],
+        [
+          5571,
+          5575
+        ],
+        [
+          5598,
+          5602
+        ]
+      ],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 1100,
+        "left_stance_mean_slip": 0.38847023812303,
+        "right_stance_mean_slip": 0.3430462865728186,
+        "left_stance_max_slip": 4.7360234966981976,
+        "right_stance_max_slip": 5.7578957431061415,
+        "left_stance_samples": 963,
+        "right_stance_samples": 896,
+        "max_mean_stance_slip": 0.38847023812303,
+        "max_joint_delta": 0.4545482735041029,
+        "p99_joint_delta": 0.12763297560487508,
+        "p999_joint_delta": 0.2383638062240475,
+        "root_z_min": 0.5199328325988005,
+        "root_z_max": 0.6795219313669187,
+        "left_landing_count": 15,
+        "right_landing_count": 20,
+        "landing_oscillation_p99": 0.08250180978731131,
+        "landing_oscillation_max": 0.28597669057098307
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 1100,
+          "left_stance_mean_slip": 0.38847023812303,
+          "right_stance_mean_slip": 0.3430462865728186,
+          "left_stance_max_slip": 4.7360234966981976,
+          "right_stance_max_slip": 5.7578957431061415,
+          "left_stance_samples": 963,
+          "right_stance_samples": 896,
+          "max_mean_stance_slip": 0.38847023812303,
+          "max_joint_delta": 0.4545482735041029,
+          "p99_joint_delta": 0.12763297560487508,
+          "p999_joint_delta": 0.2383638062240475,
+          "root_z_min": 0.5199328325988005,
+          "root_z_max": 0.6795219313669187,
+          "left_landing_count": 15,
+          "right_landing_count": 20,
+          "landing_oscillation_p99": 0.08250180978731131,
+          "landing_oscillation_max": 0.28597669057098307
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "recovery_stage0_entry_windows": [],
+      "recovery_stage1_entry_windows": [],
+      "recovery_stage2_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "disturbance_recovery",
+        "stance_slip_threshold": 0.4,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.3885 <= 0.4000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Recovery",
+      "output_name": "pushAndStumble1_subject5_recover_520_1180",
+      "source_file": "pushAndStumble1_subject5.npz",
+      "clip_kind": "range",
+      "semantic_label": "disturbance_recovery",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 520,
+      "end_frame": 1180,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Push-and-stumble recovery segment from subject5 with local arm relaxation to remove locked-arm retarget frames.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\pushAndStumble1_subject5.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Recovery\\pushAndStumble1_subject5_recover_520_1180.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Recovery\\pushAndStumble1_subject5_recover_520_1180_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 6801,
+      "num_clip_frames": 661,
+      "num_output_frames": 1100,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "relaxed_bilateral_guarded",
+        "pop_repair_threshold": 0.55,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 1100,
+        "left_stance_mean_slip": 0.28134354896330876,
+        "right_stance_mean_slip": 0.32267284503661825,
+        "left_stance_max_slip": 3.2486293638486305,
+        "right_stance_max_slip": 4.3951092518151516,
+        "left_stance_samples": 856,
+        "right_stance_samples": 928,
+        "max_mean_stance_slip": 0.32267284503661825,
+        "max_joint_delta": 0.3534928593018376,
+        "p99_joint_delta": 0.11226059643186033,
+        "p999_joint_delta": 0.20099009289332,
+        "root_z_min": 0.4901250656747758,
+        "root_z_max": 0.6968401667419979,
+        "left_landing_count": 21,
+        "right_landing_count": 17,
+        "landing_oscillation_p99": 0.08498102024084887,
+        "landing_oscillation_max": 0.29190011921901204
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 1100,
+          "left_stance_mean_slip": 0.28134354896330876,
+          "right_stance_mean_slip": 0.32267284503661825,
+          "left_stance_max_slip": 3.2486293638486305,
+          "right_stance_max_slip": 4.3951092518151516,
+          "left_stance_samples": 856,
+          "right_stance_samples": 928,
+          "max_mean_stance_slip": 0.32267284503661825,
+          "max_joint_delta": 0.3534928593018376,
+          "p99_joint_delta": 0.11226059643186033,
+          "p999_joint_delta": 0.20099009289332,
+          "root_z_min": 0.4901250656747758,
+          "root_z_max": 0.6968401667419979,
+          "left_landing_count": 21,
+          "right_landing_count": 17,
+          "landing_oscillation_p99": 0.08498102024084887,
+          "landing_oscillation_max": 0.29190011921901204
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "recovery_stage0_entry_windows": [],
+      "recovery_stage1_entry_windows": [],
+      "recovery_stage2_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "disturbance_recovery",
+        "stance_slip_threshold": 0.4,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.3227 <= 0.4000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    }
+  ],
+  "phase1_clips": [
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject2_stand_to_walk_1332_1530_natural",
+      "source_file": "walk1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_transition",
+      "training_sets": [
+        "phase1",
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 1332,
+      "end_frame": 1530,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Stand-to-walk transition from walk1_subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject2_stand_to_walk_1332_1530_natural.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject2_stand_to_walk_1332_1530_natural_vel.npz",
+      "phase1_output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\phase1\\Walk\\walk1_subject2_stand_to_walk_1332_1530_natural_vel.npz",
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 199,
+      "num_output_frames": 330,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 330,
+        "left_stance_mean_slip": 0.15347766637139268,
+        "right_stance_mean_slip": 0.1302488572769105,
+        "left_stance_max_slip": 2.775587022757687,
+        "right_stance_max_slip": 2.28462623077144,
+        "left_stance_samples": 300,
+        "right_stance_samples": 292,
+        "max_mean_stance_slip": 0.15347766637139268,
+        "max_joint_delta": 0.34877950216189146,
+        "p99_joint_delta": 0.07377658776747019,
+        "p999_joint_delta": 0.24257148691413696,
+        "root_z_min": 0.6336797939935729,
+        "root_z_max": 0.6814377605891372,
+        "left_landing_count": 2,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.010175487692743904,
+        "landing_oscillation_max": 0.01175333601821471
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 330,
+          "left_stance_mean_slip": 0.14677634894274946,
+          "right_stance_mean_slip": 0.1225440783492361,
+          "left_stance_max_slip": 2.818632637087829,
+          "right_stance_max_slip": 2.2951281639785237,
+          "left_stance_samples": 299,
+          "right_stance_samples": 291,
+          "max_mean_stance_slip": 0.14677634894274946,
+          "max_joint_delta": 0.34877950216189146,
+          "p99_joint_delta": 0.0713944689835507,
+          "p999_joint_delta": 0.24257148691413696,
+          "root_z_min": 0.6336797939935729,
+          "root_z_max": 0.6814377605891372,
+          "left_landing_count": 2,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.014047361856367208,
+          "landing_oscillation_max": 0.024527249541899332
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                234,
+                304
+              ],
+              [
+                116,
+                273
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 330,
+              "left_stance_mean_slip": 0.15347766637139268,
+              "right_stance_mean_slip": 0.1302488572769105,
+              "left_stance_max_slip": 2.775587022757687,
+              "right_stance_max_slip": 2.28462623077144,
+              "left_stance_samples": 300,
+              "right_stance_samples": 292,
+              "max_mean_stance_slip": 0.15347766637139268,
+              "max_joint_delta": 0.34877950216189146,
+              "p99_joint_delta": 0.07377658776747019,
+              "p999_joint_delta": 0.24257148691413696,
+              "root_z_min": 0.6336797939935729,
+              "root_z_max": 0.6814377605891372,
+              "left_landing_count": 2,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.010175487692743904,
+              "landing_oscillation_max": 0.01175333601821471
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 330,
+          "left_stance_mean_slip": 0.15347766637139268,
+          "right_stance_mean_slip": 0.1302488572769105,
+          "left_stance_max_slip": 2.775587022757687,
+          "right_stance_max_slip": 2.28462623077144,
+          "left_stance_samples": 300,
+          "right_stance_samples": 292,
+          "max_mean_stance_slip": 0.15347766637139268,
+          "max_joint_delta": 0.34877950216189146,
+          "p99_joint_delta": 0.07377658776747019,
+          "p999_joint_delta": 0.24257148691413696,
+          "root_z_min": 0.6336797939935729,
+          "root_z_max": 0.6814377605891372,
+          "left_landing_count": 2,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.010175487692743904,
+          "landing_oscillation_max": 0.01175333601821471
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_transition",
+        "stance_slip_threshold": 0.35,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.1535 <= 0.3500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk2_subject1_walk_normal_6540_6629",
+      "source_file": "walk2_subject1.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_forward",
+      "training_sets": [
+        "phase1",
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 6540,
+      "end_frame": 6629,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Normal-speed walk window from walk2_subject1.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk2_subject1.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk2_subject1_walk_normal_6540_6629.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk2_subject1_walk_normal_6540_6629_vel.npz",
+      "phase1_output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\phase1\\Walk\\walk2_subject1_walk_normal_6540_6629_vel.npz",
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7146,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.11562154583034112,
+        "right_stance_mean_slip": 0.13935902124661254,
+        "left_stance_max_slip": 2.046324561748194,
+        "right_stance_max_slip": 1.3834650917115594,
+        "left_stance_samples": 96,
+        "right_stance_samples": 86,
+        "max_mean_stance_slip": 0.13935902124661254,
+        "max_joint_delta": 0.41597993313309667,
+        "p99_joint_delta": 0.15474476056147426,
+        "p999_joint_delta": 0.3309564200627371,
+        "root_z_min": 0.6454979609175904,
+        "root_z_max": 0.7026111329400742,
+        "left_landing_count": 3,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.03337047732516357,
+        "landing_oscillation_max": 0.04480326321457273
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.1223212302711048,
+          "right_stance_mean_slip": 0.1254221493699352,
+          "left_stance_max_slip": 2.046324561748194,
+          "right_stance_max_slip": 1.3834650917115594,
+          "left_stance_samples": 97,
+          "right_stance_samples": 86,
+          "max_mean_stance_slip": 0.1254221493699352,
+          "max_joint_delta": 0.41597993313309667,
+          "p99_joint_delta": 0.15617144470791303,
+          "p999_joint_delta": 0.3309564200627371,
+          "root_z_min": 0.6454979609175904,
+          "root_z_max": 0.7026111329400742,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.0782731707037655,
+          "landing_oscillation_max": 0.12768261138216908
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                2,
+                64,
+                125
+              ],
+              [
+                34,
+                94
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 149,
+              "left_stance_mean_slip": 0.11562154583034112,
+              "right_stance_mean_slip": 0.13935902124661254,
+              "left_stance_max_slip": 2.046324561748194,
+              "right_stance_max_slip": 1.3834650917115594,
+              "left_stance_samples": 96,
+              "right_stance_samples": 86,
+              "max_mean_stance_slip": 0.13935902124661254,
+              "max_joint_delta": 0.41597993313309667,
+              "p99_joint_delta": 0.15474476056147426,
+              "p999_joint_delta": 0.3309564200627371,
+              "root_z_min": 0.6454979609175904,
+              "root_z_max": 0.7026111329400742,
+              "left_landing_count": 3,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.03337047732516357,
+              "landing_oscillation_max": 0.04480326321457273
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.11562154583034112,
+          "right_stance_mean_slip": 0.13935902124661254,
+          "left_stance_max_slip": 2.046324561748194,
+          "right_stance_max_slip": 1.3834650917115594,
+          "left_stance_samples": 96,
+          "right_stance_samples": 86,
+          "max_mean_stance_slip": 0.13935902124661254,
+          "max_joint_delta": 0.41597993313309667,
+          "p99_joint_delta": 0.15474476056147426,
+          "p999_joint_delta": 0.3309564200627371,
+          "root_z_min": 0.6454979609175904,
+          "root_z_max": 0.7026111329400742,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.03337047732516357,
+          "landing_oscillation_max": 0.04480326321457273
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_forward",
+        "stance_slip_threshold": 0.5,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.1394 <= 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "aiming1_subject1_relaxed_upright_1408_1497",
+      "source_file": "aiming1_subject1.npz",
+      "clip_kind": "range",
+      "semantic_label": "upright",
+      "training_sets": [
+        "phase1",
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 1408,
+      "end_frame": 1497,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Upright segment with both arms relaxed out of the aiming pose.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\aiming1_subject1.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\aiming1_subject1_relaxed_upright_1408_1497.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\aiming1_subject1_relaxed_upright_1408_1497_vel.npz",
+      "phase1_output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\phase1\\Walk\\aiming1_subject1_relaxed_upright_1408_1497_vel.npz",
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7184,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "relaxed_bilateral_idle",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.0031971411337496664,
+        "right_stance_mean_slip": 0.003757023455528684,
+        "left_stance_max_slip": 0.010610739984763706,
+        "right_stance_max_slip": 0.011303387152025375,
+        "left_stance_samples": 148,
+        "right_stance_samples": 148,
+        "max_mean_stance_slip": 0.003757023455528684,
+        "max_joint_delta": 0.007485273483564783,
+        "p99_joint_delta": 0.006170961225156542,
+        "p999_joint_delta": 0.00716656014985427,
+        "root_z_min": 0.6927743316415043,
+        "root_z_max": 0.6961756080711156,
+        "left_landing_count": 0,
+        "right_landing_count": 0,
+        "landing_oscillation_p99": 0.0,
+        "landing_oscillation_max": 0.0
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.0031971411337496664,
+          "right_stance_mean_slip": 0.003757023455528684,
+          "left_stance_max_slip": 0.010610739984763706,
+          "right_stance_max_slip": 0.011303387152025375,
+          "left_stance_samples": 148,
+          "right_stance_samples": 148,
+          "max_mean_stance_slip": 0.003757023455528684,
+          "max_joint_delta": 0.007485273483564783,
+          "p99_joint_delta": 0.006170961225156542,
+          "p999_joint_delta": 0.00716656014985427,
+          "root_z_min": 0.6927743316415043,
+          "root_z_max": 0.6961756080711156,
+          "left_landing_count": 0,
+          "right_landing_count": 0,
+          "landing_oscillation_p99": 0.0,
+          "landing_oscillation_max": 0.0
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "upright",
+        "stance_slip_threshold": 0.15,
+        "passed": true,
+        "reason": "max_mean_stance_slip 0.0038 <= 0.1500"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": false,
+        "reason": "passed local quality gate"
+      }
+    }
+  ],
+  "deferred_clips": [
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject2_straight_sidewalk_walk_right_4690_4765",
+      "source_file": "walk1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_lateral",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 4690,
+      "end_frame": 4765,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Rightward sidewalk segment from walk1_subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject2_straight_sidewalk_walk_right_4690_4765.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject2_straight_sidewalk_walk_right_4690_4765_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 76,
+      "num_output_frames": 125,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 125,
+        "left_stance_mean_slip": 0.5207716116337062,
+        "right_stance_mean_slip": 0.26377069155587596,
+        "left_stance_max_slip": 3.990866572453458,
+        "right_stance_max_slip": 3.1634039883039553,
+        "left_stance_samples": 90,
+        "right_stance_samples": 83,
+        "max_mean_stance_slip": 0.5207716116337062,
+        "max_joint_delta": 0.4194199250416018,
+        "p99_joint_delta": 0.12302763878075357,
+        "p999_joint_delta": 0.30937101262009953,
+        "root_z_min": 0.6076647464978744,
+        "root_z_max": 0.6665846977722742,
+        "left_landing_count": 2,
+        "right_landing_count": 3,
+        "landing_oscillation_p99": 0.11051922381564781,
+        "landing_oscillation_max": 0.274884726846229
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 125,
+          "left_stance_mean_slip": 0.5207716116337062,
+          "right_stance_mean_slip": 0.26377069155587596,
+          "left_stance_max_slip": 3.990866572453458,
+          "right_stance_max_slip": 3.1634039883039553,
+          "left_stance_samples": 90,
+          "right_stance_samples": 83,
+          "max_mean_stance_slip": 0.5207716116337062,
+          "max_joint_delta": 0.4194199250416018,
+          "p99_joint_delta": 0.12302763878075357,
+          "p999_joint_delta": 0.30937101262009953,
+          "root_z_min": 0.6076647464978744,
+          "root_z_max": 0.6665846977722742,
+          "left_landing_count": 2,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.11051922381564781,
+          "landing_oscillation_max": 0.274884726846229
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_lateral",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.5208 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject2_straight_backward_walk_normal_3265_3340",
+      "source_file": "walk1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_backward",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 3265,
+      "end_frame": 3340,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Backward walk segment from walk1_subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject2_straight_backward_walk_normal_3265_3340.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject2_straight_backward_walk_normal_3265_3340_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 76,
+      "num_output_frames": 125,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 125,
+        "left_stance_mean_slip": 0.7422683389177426,
+        "right_stance_mean_slip": 0.5687160034075379,
+        "left_stance_max_slip": 3.9569569824358615,
+        "right_stance_max_slip": 3.8347642196710954,
+        "left_stance_samples": 78,
+        "right_stance_samples": 93,
+        "max_mean_stance_slip": 0.7422683389177426,
+        "max_joint_delta": 0.17444877160598693,
+        "p99_joint_delta": 0.11722086130606497,
+        "p999_joint_delta": 0.16114583404452332,
+        "root_z_min": 0.6022106243442984,
+        "root_z_max": 0.6764248190849576,
+        "left_landing_count": 3,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.056629166358620926,
+        "landing_oscillation_max": 0.09710765077846006
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": false,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 125,
+          "left_stance_mean_slip": 0.7422683389177426,
+          "right_stance_mean_slip": 0.5687160034075379,
+          "left_stance_max_slip": 3.9569569824358615,
+          "right_stance_max_slip": 3.8347642196710954,
+          "left_stance_samples": 78,
+          "right_stance_samples": 93,
+          "max_mean_stance_slip": 0.7422683389177426,
+          "max_joint_delta": 0.17444877160598693,
+          "p99_joint_delta": 0.11722086130606497,
+          "p999_joint_delta": 0.16114583404452332,
+          "root_z_min": 0.6022106243442984,
+          "root_z_max": 0.6764248190849576,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.056629166358620926,
+          "landing_oscillation_max": 0.09710765077846006
+        },
+        "steps": []
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_backward",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.7423 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject2_straight_walk_fast_2940_3015",
+      "source_file": "walk1_subject2.npz",
+      "clip_kind": "range",
+      "semantic_label": "walk_forward",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 2940,
+      "end_frame": 3015,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Fast straight walk loop from walk1_subject2.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject2_straight_walk_fast_2940_3015.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject2_straight_walk_fast_2940_3015_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 76,
+      "num_output_frames": 125,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 125,
+        "left_stance_mean_slip": 0.6418352828722543,
+        "right_stance_mean_slip": 0.7929825442519699,
+        "left_stance_max_slip": 4.541718675658664,
+        "right_stance_max_slip": 4.2181741575813305,
+        "left_stance_samples": 95,
+        "right_stance_samples": 86,
+        "max_mean_stance_slip": 0.7929825442519699,
+        "max_joint_delta": 0.4427724414793067,
+        "p99_joint_delta": 0.16174198482487306,
+        "p999_joint_delta": 0.35928593957695926,
+        "root_z_min": 0.5987509253108562,
+        "root_z_max": 0.6828454378137815,
+        "left_landing_count": 2,
+        "right_landing_count": 3,
+        "landing_oscillation_p99": 0.015467935749782344,
+        "landing_oscillation_max": 0.022410052318271645
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 125,
+          "left_stance_mean_slip": 0.5988213014661147,
+          "right_stance_mean_slip": 0.7911104380961768,
+          "left_stance_max_slip": 4.594008232609419,
+          "right_stance_max_slip": 4.386201579663946,
+          "left_stance_samples": 94,
+          "right_stance_samples": 86,
+          "max_mean_stance_slip": 0.7911104380961768,
+          "max_joint_delta": 0.4427724414793067,
+          "p99_joint_delta": 0.16174198482487306,
+          "p999_joint_delta": 0.35928593957695926,
+          "root_z_min": 0.5987509253108562,
+          "root_z_max": 0.6828454378137815,
+          "left_landing_count": 2,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.030974850607512584,
+          "landing_oscillation_max": 0.0655052876534612
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                36,
+                85
+              ],
+              [
+                12,
+                62,
+                109
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 125,
+              "left_stance_mean_slip": 0.6418352828722543,
+              "right_stance_mean_slip": 0.7929825442519699,
+              "left_stance_max_slip": 4.541718675658664,
+              "right_stance_max_slip": 4.2181741575813305,
+              "left_stance_samples": 95,
+              "right_stance_samples": 86,
+              "max_mean_stance_slip": 0.7929825442519699,
+              "max_joint_delta": 0.4427724414793067,
+              "p99_joint_delta": 0.16174198482487306,
+              "p999_joint_delta": 0.35928593957695926,
+              "root_z_min": 0.5987509253108562,
+              "root_z_max": 0.6828454378137815,
+              "left_landing_count": 2,
+              "right_landing_count": 3,
+              "landing_oscillation_p99": 0.015467935749782344,
+              "landing_oscillation_max": 0.022410052318271645
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 125,
+          "left_stance_mean_slip": 0.6418352828722543,
+          "right_stance_mean_slip": 0.7929825442519699,
+          "left_stance_max_slip": 4.541718675658664,
+          "right_stance_max_slip": 4.2181741575813305,
+          "left_stance_samples": 95,
+          "right_stance_samples": 86,
+          "max_mean_stance_slip": 0.7929825442519699,
+          "max_joint_delta": 0.4427724414793067,
+          "p99_joint_delta": 0.16174198482487306,
+          "p999_joint_delta": 0.35928593957695926,
+          "root_z_min": 0.5987509253108562,
+          "root_z_max": 0.6828454378137815,
+          "left_landing_count": 2,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.015467935749782344,
+          "landing_oscillation_max": 0.022410052318271645
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "walk_forward",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.7930 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject5_walk_rightturn_510_599",
+      "source_file": "walk1_subject5.npz",
+      "clip_kind": "range",
+      "semantic_label": "turn_walk",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 510,
+      "end_frame": 599,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Right-turn walking segment from walk1_subject5 after left-arm repair.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject5.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject5_walk_rightturn_510_599.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject5_walk_rightturn_510_599_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "left_from_right_tempered",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.5762352660139317,
+        "right_stance_mean_slip": 0.3656963909138133,
+        "left_stance_max_slip": 3.3725439400246575,
+        "right_stance_max_slip": 3.276302733111465,
+        "left_stance_samples": 111,
+        "right_stance_samples": 107,
+        "max_mean_stance_slip": 0.5762352660139317,
+        "max_joint_delta": 0.40459188690256587,
+        "p99_joint_delta": 0.18086612649876926,
+        "p999_joint_delta": 0.3264614608101745,
+        "root_z_min": 0.6010955040090467,
+        "root_z_max": 0.6563183500011729,
+        "left_landing_count": 3,
+        "right_landing_count": 2,
+        "landing_oscillation_p99": 0.03181198305932088,
+        "landing_oscillation_max": 0.13266584574398932
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.5753975810620813,
+          "right_stance_mean_slip": 0.3628740563891664,
+          "left_stance_max_slip": 3.496920538010971,
+          "right_stance_max_slip": 3.3389952593434087,
+          "left_stance_samples": 111,
+          "right_stance_samples": 107,
+          "max_mean_stance_slip": 0.5753975810620813,
+          "max_joint_delta": 0.6085161615424786,
+          "p99_joint_delta": 0.17641594361331664,
+          "p999_joint_delta": 0.32919332556911685,
+          "root_z_min": 0.6010955040090467,
+          "root_z_max": 0.6563183500011729,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.0986602029596424,
+          "landing_oscillation_max": 0.37890850049487335
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                20,
+                77,
+                126
+              ],
+              [
+                51,
+                103
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 149,
+              "left_stance_mean_slip": 0.5762352660139317,
+              "right_stance_mean_slip": 0.3656963909138133,
+              "left_stance_max_slip": 3.3725439400246575,
+              "right_stance_max_slip": 3.276302733111465,
+              "left_stance_samples": 111,
+              "right_stance_samples": 107,
+              "max_mean_stance_slip": 0.5762352660139317,
+              "max_joint_delta": 0.40459188690256587,
+              "p99_joint_delta": 0.18086612649876926,
+              "p999_joint_delta": 0.3264614608101745,
+              "root_z_min": 0.6010955040090467,
+              "root_z_max": 0.6563183500011729,
+              "left_landing_count": 3,
+              "right_landing_count": 2,
+              "landing_oscillation_p99": 0.03181198305932088,
+              "landing_oscillation_max": 0.13266584574398932
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.5762352660139317,
+          "right_stance_mean_slip": 0.3656963909138133,
+          "left_stance_max_slip": 3.3725439400246575,
+          "right_stance_max_slip": 3.276302733111465,
+          "left_stance_samples": 111,
+          "right_stance_samples": 107,
+          "max_mean_stance_slip": 0.5762352660139317,
+          "max_joint_delta": 0.40459188690256587,
+          "p99_joint_delta": 0.18086612649876926,
+          "p999_joint_delta": 0.3264614608101745,
+          "root_z_min": 0.6010955040090467,
+          "root_z_max": 0.6563183500011729,
+          "left_landing_count": 3,
+          "right_landing_count": 2,
+          "landing_oscillation_p99": 0.03181198305932088,
+          "landing_oscillation_max": 0.13266584574398932
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "turn_walk",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.5762 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    },
+    {
+      "output_group": "Walk",
+      "output_name": "walk1_subject5_walk_turnaround_thenwalk_5622_5711",
+      "source_file": "walk1_subject5.npz",
+      "clip_kind": "range",
+      "semantic_label": "turn_walk",
+      "training_sets": [
+        "phase2",
+        "unified"
+      ],
+      "start_frame": 5622,
+      "end_frame": 5711,
+      "static_frame": null,
+      "static_length": null,
+      "enabled": true,
+      "note": "Turn-around then walk segment from walk1_subject5 after left-arm repair.",
+      "source_path": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject5.npz",
+      "trimmed_qpos_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\trimmed_qpos\\Walk\\walk1_subject5_walk_turnaround_thenwalk_5622_5711.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\amp\\Walk\\walk1_subject5_walk_turnaround_thenwalk_5622_5711_vel.npz",
+      "phase1_output_vel_file": null,
+      "input_fps": 30.0,
+      "output_fps": 50,
+      "num_source_frames": 7840,
+      "num_clip_frames": 90,
+      "num_output_frames": 149,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "left_from_right_tempered",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "quality_metrics": {
+        "fps": 50.0,
+        "num_frames": 149,
+        "left_stance_mean_slip": 0.5624159679786073,
+        "right_stance_mean_slip": 0.47849969714941415,
+        "left_stance_max_slip": 3.2351758411206926,
+        "right_stance_max_slip": 2.86756392291321,
+        "left_stance_samples": 110,
+        "right_stance_samples": 108,
+        "max_mean_stance_slip": 0.5624159679786073,
+        "max_joint_delta": 0.41073407406937856,
+        "p99_joint_delta": 0.17121356541584462,
+        "p999_joint_delta": 0.30291881359851086,
+        "root_z_min": 0.6023950227492766,
+        "root_z_max": 0.6529482598470281,
+        "left_landing_count": 3,
+        "right_landing_count": 3,
+        "landing_oscillation_p99": 0.015134681723571642,
+        "landing_oscillation_max": 0.02945730108899547
+      },
+      "landing_repair": {
+        "output_fps": 50,
+        "repair_applied": true,
+        "quality_before_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.5640891400682186,
+          "right_stance_mean_slip": 0.45164212051963537,
+          "left_stance_max_slip": 3.4615788456521925,
+          "right_stance_max_slip": 2.8502944943620503,
+          "left_stance_samples": 110,
+          "right_stance_samples": 107,
+          "max_mean_stance_slip": 0.5640891400682186,
+          "max_joint_delta": 0.41073407406937856,
+          "p99_joint_delta": 0.17121356541584462,
+          "p999_joint_delta": 0.30291881359851086,
+          "root_z_min": 0.6023950227492766,
+          "root_z_max": 0.6529482598470281,
+          "left_landing_count": 3,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.02795543833429658,
+          "landing_oscillation_max": 0.06283088944415882
+        },
+        "steps": [
+          {
+            "step": {
+              "kind": "midpoint",
+              "joint_mode": "all",
+              "alpha": 0.5,
+              "radius": 3,
+              "passes": 3,
+              "threshold": null,
+              "pad": 1
+            },
+            "landing_frames": [
+              [
+                4,
+                50,
+                103
+              ],
+              [
+                25,
+                77,
+                131
+              ]
+            ],
+            "quality_after_step": {
+              "fps": 50.0,
+              "num_frames": 149,
+              "left_stance_mean_slip": 0.5624159679786073,
+              "right_stance_mean_slip": 0.47849969714941415,
+              "left_stance_max_slip": 3.2351758411206926,
+              "right_stance_max_slip": 2.86756392291321,
+              "left_stance_samples": 110,
+              "right_stance_samples": 108,
+              "max_mean_stance_slip": 0.5624159679786073,
+              "max_joint_delta": 0.41073407406937856,
+              "p99_joint_delta": 0.17121356541584462,
+              "p999_joint_delta": 0.30291881359851086,
+              "root_z_min": 0.6023950227492766,
+              "root_z_max": 0.6529482598470281,
+              "left_landing_count": 3,
+              "right_landing_count": 3,
+              "landing_oscillation_p99": 0.015134681723571642,
+              "landing_oscillation_max": 0.02945730108899547
+            }
+          }
+        ],
+        "quality_after_repair": {
+          "fps": 50.0,
+          "num_frames": 149,
+          "left_stance_mean_slip": 0.5624159679786073,
+          "right_stance_mean_slip": 0.47849969714941415,
+          "left_stance_max_slip": 3.2351758411206926,
+          "right_stance_max_slip": 2.86756392291321,
+          "left_stance_samples": 110,
+          "right_stance_samples": 108,
+          "max_mean_stance_slip": 0.5624159679786073,
+          "max_joint_delta": 0.41073407406937856,
+          "p99_joint_delta": 0.17121356541584462,
+          "p999_joint_delta": 0.30291881359851086,
+          "root_z_min": 0.6023950227492766,
+          "root_z_max": 0.6529482598470281,
+          "left_landing_count": 3,
+          "right_landing_count": 3,
+          "landing_oscillation_p99": 0.015134681723571642,
+          "landing_oscillation_max": 0.02945730108899547
+        }
+      },
+      "recovery_entry_windows": [],
+      "quality_gate": {
+        "semantic_label": "turn_walk",
+        "stance_slip_threshold": 0.5,
+        "passed": false,
+        "reason": "max_mean_stance_slip 0.5624 > 0.5000"
+      },
+      "promotion": {
+        "promoted_to_amp": true,
+        "forced": true,
+        "reason": "forced promotion override enabled for sim-stage training"
+      }
+    }
+  ],
+  "deferred_candidates": [],
+  "full_length_converted": [
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\aiming1_subject1.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\aiming1_subject1_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 7184,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "relaxed_bilateral_idle",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 7184,
+        "left_stance_mean_slip": 0.16012926372764782,
+        "right_stance_mean_slip": 0.21579820145674591,
+        "left_stance_max_slip": 3.539856440070507,
+        "right_stance_max_slip": 3.8189556715364024,
+        "left_stance_samples": 5506,
+        "right_stance_samples": 5719,
+        "max_mean_stance_slip": 0.21579820145674591,
+        "max_joint_delta": 1.0612419633208932,
+        "p99_joint_delta": 0.1565961547947927,
+        "p999_joint_delta": 0.49353387990584696,
+        "root_z_min": 0.45863990785375075,
+        "root_z_max": 0.71467186327047,
+        "left_landing_count": 149,
+        "right_landing_count": 144,
+        "landing_oscillation_p99": 0.11486311526086508,
+        "landing_oscillation_max": 0.660910993962584
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 7184,
+        "left_stance_mean_slip": 0.1601292637276479,
+        "right_stance_mean_slip": 0.21579820145674591,
+        "left_stance_max_slip": 3.539856440070499,
+        "right_stance_max_slip": 3.8189556715364024,
+        "left_stance_samples": 5506,
+        "right_stance_samples": 5719,
+        "max_mean_stance_slip": 0.21579820145674591,
+        "max_joint_delta": 1.0612419633208932,
+        "p99_joint_delta": 0.15415097237882994,
+        "p999_joint_delta": 0.49353387990584696,
+        "root_z_min": 0.45863990785375075,
+        "root_z_max": 0.71467186327047,
+        "left_landing_count": 149,
+        "right_landing_count": 144,
+        "landing_oscillation_p99": 0.11316074004876792,
+        "landing_oscillation_max": 0.660910993962584
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\aiming1_subject4.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\aiming1_subject4_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 7184,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "relaxed_bilateral_idle",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 7184,
+        "left_stance_mean_slip": 0.35554417268317395,
+        "right_stance_mean_slip": 0.36923891961190763,
+        "left_stance_max_slip": 7.119573068043948,
+        "right_stance_max_slip": 5.085491179330977,
+        "left_stance_samples": 4363,
+        "right_stance_samples": 4264,
+        "max_mean_stance_slip": 0.36923891961190763,
+        "max_joint_delta": 1.9494543032207279,
+        "p99_joint_delta": 0.17851120850338825,
+        "p999_joint_delta": 0.5590147374136208,
+        "root_z_min": 0.07003486550844384,
+        "root_z_max": 0.7035349520390951,
+        "left_landing_count": 83,
+        "right_landing_count": 87,
+        "landing_oscillation_p99": 0.1513198385237874,
+        "landing_oscillation_max": 0.9960564579316302
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 7184,
+        "left_stance_mean_slip": 0.35554417268317384,
+        "right_stance_mean_slip": 0.36923891961190763,
+        "left_stance_max_slip": 7.119573068043941,
+        "right_stance_max_slip": 5.0854911793309805,
+        "left_stance_samples": 4363,
+        "right_stance_samples": 4264,
+        "max_mean_stance_slip": 0.36923891961190763,
+        "max_joint_delta": 1.918268456812085,
+        "p99_joint_delta": 0.13361336052915282,
+        "p999_joint_delta": 0.3842479112911206,
+        "root_z_min": 0.07003486550844384,
+        "root_z_max": 0.7035349520390951,
+        "left_landing_count": 83,
+        "right_landing_count": 87,
+        "landing_oscillation_p99": 0.14289423236585705,
+        "landing_oscillation_max": 0.6802695407877597
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\fallAndGetUp1_subject1.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\fallAndGetUp1_subject1_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 5047,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.85,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          2030,
+          2032
+        ]
+      ],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 5047,
+        "left_stance_mean_slip": 0.24567778658000886,
+        "right_stance_mean_slip": 0.2555133806586898,
+        "left_stance_max_slip": 5.296061960025255,
+        "right_stance_max_slip": 4.53070807489469,
+        "left_stance_samples": 2360,
+        "right_stance_samples": 2440,
+        "max_mean_stance_slip": 0.2555133806586898,
+        "max_joint_delta": 1.671031534092501,
+        "p99_joint_delta": 0.2590711190412133,
+        "p999_joint_delta": 0.5411874475143185,
+        "root_z_min": 0.06635903444900465,
+        "root_z_max": 0.7191564876843488,
+        "left_landing_count": 118,
+        "right_landing_count": 110,
+        "landing_oscillation_p99": 0.249857221866914,
+        "landing_oscillation_max": 1.4250910868389914
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 5047,
+        "left_stance_mean_slip": 0.24567778658000886,
+        "right_stance_mean_slip": 0.2555133806586898,
+        "left_stance_max_slip": 5.296061960025255,
+        "right_stance_max_slip": 4.530708074894686,
+        "left_stance_samples": 2360,
+        "right_stance_samples": 2440,
+        "max_mean_stance_slip": 0.2555133806586898,
+        "max_joint_delta": 1.4893925484182287,
+        "p99_joint_delta": 0.25907995899000635,
+        "p999_joint_delta": 0.5418550078562613,
+        "root_z_min": 0.06635903444900465,
+        "root_z_max": 0.7191564876843488,
+        "left_landing_count": 118,
+        "right_landing_count": 110,
+        "landing_oscillation_p99": 0.249857221866914,
+        "landing_oscillation_max": 1.4250910868389914
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\fallAndGetUp1_subject4.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\fallAndGetUp1_subject4_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 5047,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.9,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          1948,
+          1950
+        ],
+        [
+          2928,
+          2932
+        ],
+        [
+          3578,
+          3580
+        ],
+        [
+          3683,
+          3686
+        ],
+        [
+          4061,
+          4064
+        ],
+        [
+          4069,
+          4076
+        ],
+        [
+          4132,
+          4135
+        ],
+        [
+          4148,
+          4150
+        ],
+        [
+          4565,
+          4567
+        ],
+        [
+          4581,
+          4583
+        ],
+        [
+          4584,
+          4587
+        ]
+      ],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 5047,
+        "left_stance_mean_slip": 0.30821418435665054,
+        "right_stance_mean_slip": 0.32056151712444747,
+        "left_stance_max_slip": 8.603738661337731,
+        "right_stance_max_slip": 8.810787978325582,
+        "left_stance_samples": 3172,
+        "right_stance_samples": 3378,
+        "max_mean_stance_slip": 0.32056151712444747,
+        "max_joint_delta": 2.7491040004748597,
+        "p99_joint_delta": 0.30482613344406,
+        "p999_joint_delta": 0.7644637823904882,
+        "root_z_min": 0.060270256788723484,
+        "root_z_max": 0.6950901955729335,
+        "left_landing_count": 105,
+        "right_landing_count": 100,
+        "landing_oscillation_p99": 0.34665783374728676,
+        "landing_oscillation_max": 2.6776757440603447
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 5047,
+        "left_stance_mean_slip": 0.30821418435665043,
+        "right_stance_mean_slip": 0.32056151712444747,
+        "left_stance_max_slip": 8.603738661337731,
+        "right_stance_max_slip": 8.810787978325582,
+        "left_stance_samples": 3172,
+        "right_stance_samples": 3378,
+        "max_mean_stance_slip": 0.32056151712444747,
+        "max_joint_delta": 1.8456796457957996,
+        "p99_joint_delta": 0.3043889374893716,
+        "p999_joint_delta": 0.7494239828936573,
+        "root_z_min": 0.060270256788723484,
+        "root_z_max": 0.6950901955729335,
+        "left_landing_count": 105,
+        "right_landing_count": 100,
+        "landing_oscillation_p99": 0.34490194660942186,
+        "landing_oscillation_max": 1.665141328786682
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\fallAndGetUp2_subject2.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\fallAndGetUp2_subject2_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 4918,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.85,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          275,
+          278
+        ],
+        [
+          1731,
+          1733
+        ],
+        [
+          1759,
+          1763
+        ],
+        [
+          1771,
+          1773
+        ],
+        [
+          1780,
+          1782
+        ],
+        [
+          1799,
+          1801
+        ],
+        [
+          1802,
+          1805
+        ],
+        [
+          1809,
+          1811
+        ],
+        [
+          2057,
+          2059
+        ],
+        [
+          2069,
+          2071
+        ],
+        [
+          2076,
+          2080
+        ],
+        [
+          2086,
+          2089
+        ],
+        [
+          2354,
+          2357
+        ],
+        [
+          2566,
+          2572
+        ],
+        [
+          2586,
+          2589
+        ],
+        [
+          2591,
+          2593
+        ],
+        [
+          2600,
+          2603
+        ],
+        [
+          2606,
+          2609
+        ],
+        [
+          2617,
+          2619
+        ],
+        [
+          3462,
+          3465
+        ],
+        [
+          4030,
+          4032
+        ]
+      ],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 4918,
+        "left_stance_mean_slip": 0.2516086118395738,
+        "right_stance_mean_slip": 0.23652178089524348,
+        "left_stance_max_slip": 5.43532880403028,
+        "right_stance_max_slip": 7.360654096676002,
+        "left_stance_samples": 3099,
+        "right_stance_samples": 2473,
+        "max_mean_stance_slip": 0.2516086118395738,
+        "max_joint_delta": 2.037352157357867,
+        "p99_joint_delta": 0.3201915872905387,
+        "p999_joint_delta": 0.8024458816714143,
+        "root_z_min": 0.05833978686323909,
+        "root_z_max": 0.70317957281159,
+        "left_landing_count": 97,
+        "right_landing_count": 97,
+        "landing_oscillation_p99": 0.3928327521877842,
+        "landing_oscillation_max": 2.1888950968412204
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 4918,
+        "left_stance_mean_slip": 0.2516086118395737,
+        "right_stance_mean_slip": 0.23650166239842985,
+        "left_stance_max_slip": 5.43532880403028,
+        "right_stance_max_slip": 7.3606540966760035,
+        "left_stance_samples": 3099,
+        "right_stance_samples": 2473,
+        "max_mean_stance_slip": 0.2516086118395737,
+        "max_joint_delta": 2.037352157357867,
+        "p99_joint_delta": 0.31557856679156465,
+        "p999_joint_delta": 0.6982253005712905,
+        "root_z_min": 0.05833978686323909,
+        "root_z_max": 0.70317957281159,
+        "left_landing_count": 97,
+        "right_landing_count": 97,
+        "landing_oscillation_p99": 0.3965268398057325,
+        "landing_oscillation_max": 1.5387791273221707
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\pushAndStumble1_subject2.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\pushAndStumble1_subject2_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 6801,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": 0.55,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [
+        [
+          743,
+          745
+        ],
+        [
+          1600,
+          1602
+        ],
+        [
+          2793,
+          2795
+        ],
+        [
+          5176,
+          5178
+        ],
+        [
+          5476,
+          5478
+        ],
+        [
+          5499,
+          5506
+        ],
+        [
+          5517,
+          5522
+        ],
+        [
+          5539,
+          5542
+        ],
+        [
+          5568,
+          5570
+        ],
+        [
+          5571,
+          5575
+        ],
+        [
+          5598,
+          5602
+        ]
+      ],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 6801,
+        "left_stance_mean_slip": 0.30383960626044754,
+        "right_stance_mean_slip": 0.2882181368763856,
+        "left_stance_max_slip": 4.998155219520868,
+        "right_stance_max_slip": 5.4435268205845855,
+        "left_stance_samples": 5167,
+        "right_stance_samples": 4972,
+        "max_mean_stance_slip": 0.30383960626044754,
+        "max_joint_delta": 3.180271036837797,
+        "p99_joint_delta": 0.26086379892284256,
+        "p999_joint_delta": 0.5487259732129045,
+        "root_z_min": 0.06501709983347545,
+        "root_z_max": 0.74013206354035,
+        "left_landing_count": 177,
+        "right_landing_count": 172,
+        "landing_oscillation_p99": 0.3548639379131995,
+        "landing_oscillation_max": 3.3559784680821942
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 6801,
+        "left_stance_mean_slip": 0.3044754266470047,
+        "right_stance_mean_slip": 0.2888073203983227,
+        "left_stance_max_slip": 4.998155219520871,
+        "right_stance_max_slip": 5.4435268205845855,
+        "left_stance_samples": 5165,
+        "right_stance_samples": 4971,
+        "max_mean_stance_slip": 0.3044754266470047,
+        "max_joint_delta": 1.5462086614981385,
+        "p99_joint_delta": 0.26100625335289546,
+        "p999_joint_delta": 0.5479067735689234,
+        "root_z_min": 0.06501709983347545,
+        "root_z_max": 0.74013206354035,
+        "left_landing_count": 177,
+        "right_landing_count": 172,
+        "landing_oscillation_p99": 0.3563908172981395,
+        "landing_oscillation_max": 1.5901355184176966
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\pushAndStumble1_subject5.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\pushAndStumble1_subject5_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 6801,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "relaxed_bilateral_guarded",
+        "pop_repair_threshold": 0.55,
+        "pop_repair_passes": 2
+      },
+      "repair_windows": [],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 6801,
+        "left_stance_mean_slip": 0.35992234168961384,
+        "right_stance_mean_slip": 0.3902790805098832,
+        "left_stance_max_slip": 6.551383484533315,
+        "right_stance_max_slip": 6.074827158809031,
+        "left_stance_samples": 4949,
+        "right_stance_samples": 5190,
+        "max_mean_stance_slip": 0.3902790805098832,
+        "max_joint_delta": 3.0460463809667275,
+        "p99_joint_delta": 0.29918723755899507,
+        "p999_joint_delta": 0.6694172281948914,
+        "root_z_min": 0.41135529740878196,
+        "root_z_max": 0.7387496956841401,
+        "left_landing_count": 207,
+        "right_landing_count": 197,
+        "landing_oscillation_p99": 0.45884441083830096,
+        "landing_oscillation_max": 2.9899207958772887
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 6801,
+        "left_stance_mean_slip": 0.3599223416896139,
+        "right_stance_mean_slip": 0.3902790805098832,
+        "left_stance_max_slip": 6.551383484533302,
+        "right_stance_max_slip": 6.074827158809024,
+        "left_stance_samples": 4949,
+        "right_stance_samples": 5190,
+        "max_mean_stance_slip": 0.3902790805098832,
+        "max_joint_delta": 0.85325206879741,
+        "p99_joint_delta": 0.25609177750427786,
+        "p999_joint_delta": 0.5658566900957085,
+        "root_z_min": 0.41135529740878196,
+        "root_z_max": 0.7387496956841401,
+        "left_landing_count": 207,
+        "right_landing_count": 197,
+        "landing_oscillation_p99": 0.3963821888620524,
+        "landing_oscillation_max": 1.0209925250159018
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject2.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\walk1_subject2_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 7840,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 7840,
+        "left_stance_mean_slip": 0.4218760074199287,
+        "right_stance_mean_slip": 0.3862753714749695,
+        "left_stance_max_slip": 5.172951303265255,
+        "right_stance_max_slip": 4.7997868674296456,
+        "left_stance_samples": 6239,
+        "right_stance_samples": 6065,
+        "max_mean_stance_slip": 0.4218760074199287,
+        "max_joint_delta": 1.471245548599179,
+        "p99_joint_delta": 0.21687932621074088,
+        "p999_joint_delta": 0.5780413940267805,
+        "root_z_min": 0.5568696627436655,
+        "root_z_max": 0.6921718268820576,
+        "left_landing_count": 203,
+        "right_landing_count": 205,
+        "landing_oscillation_p99": 0.16547519977547534,
+        "landing_oscillation_max": 1.420055232947437
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 7840,
+        "left_stance_mean_slip": 0.4218760074199287,
+        "right_stance_mean_slip": 0.38627537147496954,
+        "left_stance_max_slip": 5.172951303265255,
+        "right_stance_max_slip": 4.7997868674296456,
+        "left_stance_samples": 6239,
+        "right_stance_samples": 6065,
+        "max_mean_stance_slip": 0.4218760074199287,
+        "max_joint_delta": 1.471245548599179,
+        "p99_joint_delta": 0.21687932621074088,
+        "p999_joint_delta": 0.5780413940267805,
+        "root_z_min": 0.5568696627436655,
+        "root_z_max": 0.6921718268820576,
+        "left_landing_count": 203,
+        "right_landing_count": 205,
+        "landing_oscillation_p99": 0.16547519977547534,
+        "landing_oscillation_max": 1.420055232947437
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk1_subject5.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\walk1_subject5_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 7840,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": "left_from_right_tempered",
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 7840,
+        "left_stance_mean_slip": 0.49932481172506626,
+        "right_stance_mean_slip": 0.4669968974460249,
+        "left_stance_max_slip": 5.4213349393078785,
+        "right_stance_max_slip": 4.581569234773347,
+        "left_stance_samples": 6049,
+        "right_stance_samples": 6091,
+        "max_mean_stance_slip": 0.49932481172506626,
+        "max_joint_delta": 2.0190334694200183,
+        "p99_joint_delta": 0.25875358916522495,
+        "p999_joint_delta": 0.6517352117884782,
+        "root_z_min": 0.48689239405657236,
+        "root_z_max": 0.6979614882091241,
+        "left_landing_count": 220,
+        "right_landing_count": 222,
+        "landing_oscillation_p99": 0.16139044086948612,
+        "landing_oscillation_max": 1.4785082978133728
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 7840,
+        "left_stance_mean_slip": 0.4993248117250662,
+        "right_stance_mean_slip": 0.46699689744602496,
+        "left_stance_max_slip": 5.4213349393078785,
+        "right_stance_max_slip": 4.581569234773346,
+        "left_stance_samples": 6049,
+        "right_stance_samples": 6091,
+        "max_mean_stance_slip": 0.4993248117250662,
+        "max_joint_delta": 2.0190334694200183,
+        "p99_joint_delta": 0.2580624267884544,
+        "p999_joint_delta": 0.6486892875266754,
+        "root_z_min": 0.48689239405657236,
+        "root_z_max": 0.6979614882091241,
+        "left_landing_count": 220,
+        "right_landing_count": 222,
+        "landing_oscillation_p99": 0.1605023460860277,
+        "landing_oscillation_max": 1.4785082978133728
+      }
+    },
+    {
+      "source_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\retargeted-full\\walk2_subject1.npz",
+      "output_vel_file": "F:\\amp for hardwaree\\Z1-AMP-WALK\\src\\assets\\motions\\z1\\curated\\full_length_vel\\walk2_subject1_vel.npz",
+      "input_fps": 30.0,
+      "num_frames": 7146,
+      "process_spec": {
+        "joint_smooth_window": 1,
+        "root_pos_smooth_window": 1,
+        "root_quat_smooth_window": 1,
+        "arm_fix": null,
+        "pop_repair_threshold": null,
+        "pop_repair_passes": 0
+      },
+      "repair_windows": [],
+      "source_quality_raw": {
+        "fps": 30.0,
+        "num_frames": 7146,
+        "left_stance_mean_slip": 0.1635379752523793,
+        "right_stance_mean_slip": 0.20089436990566223,
+        "left_stance_max_slip": 5.193692066833655,
+        "right_stance_max_slip": 5.823814839247196,
+        "left_stance_samples": 5275,
+        "right_stance_samples": 5494,
+        "max_mean_stance_slip": 0.20089436990566223,
+        "max_joint_delta": 1.3886963375546388,
+        "p99_joint_delta": 0.2193110197614137,
+        "p999_joint_delta": 0.5045318439389653,
+        "root_z_min": 0.29997526990267886,
+        "root_z_max": 0.7958606362765607,
+        "left_landing_count": 179,
+        "right_landing_count": 179,
+        "landing_oscillation_p99": 0.25405191130651505,
+        "landing_oscillation_max": 1.028064434997861
+      },
+      "source_quality_processed": {
+        "fps": 30.0,
+        "num_frames": 7146,
+        "left_stance_mean_slip": 0.1635379752523792,
+        "right_stance_mean_slip": 0.20089436990566223,
+        "left_stance_max_slip": 5.193692066833648,
+        "right_stance_max_slip": 5.823814839247196,
+        "left_stance_samples": 5275,
+        "right_stance_samples": 5494,
+        "max_mean_stance_slip": 0.20089436990566223,
+        "max_joint_delta": 1.3886963375546388,
+        "p99_joint_delta": 0.2193110197614137,
+        "p999_joint_delta": 0.5045318439389653,
+        "root_z_min": 0.29997526990267886,
+        "root_z_max": 0.7958606362765607,
+        "left_landing_count": 179,
+        "right_landing_count": 179,
+        "landing_oscillation_p99": 0.25405191130651505,
+        "landing_oscillation_max": 1.028064434997861
+      }
+    }
+  ]
+}
