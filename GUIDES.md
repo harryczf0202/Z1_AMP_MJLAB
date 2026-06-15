@@ -1,6 +1,6 @@
 # Z1-AMP-MJLAB Guide
 
-This repository is configured to train a locomotion policy for the Unitree Z1 robot.
+This repository is configured to train a locomotion policy for the MagicLab Z1 robot.
 
 ## Layout
 
